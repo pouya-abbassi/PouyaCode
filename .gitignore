@@ -1,0 +1,5 @@
+__pycache__
+.sass-cache
+theme/static/css/bulma.css
+output
+*.old.jpg
