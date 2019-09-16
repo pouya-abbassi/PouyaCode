@@ -3,10 +3,10 @@ image: python:3.7-alpine
 pages:
   stage: deploy
   script:
-  - apk update && apk add make gcc build-base npm git
+  - apk update && apk add make gcc build-base npm git optipng
   - git clone https://github.com/getpelican/pelican-plugins.git
   - pip install -r requirements.txt
-  - npm install -g svgo optipng jpegtran
+  - npm install svgo optipng jpegtran
   - make publish
   artifacts:
     paths:
