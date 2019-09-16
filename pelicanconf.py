@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+
 from __future__ import unicode_literals
 from jsmin import jsmin
 import sass, os
@@ -43,6 +44,10 @@ RELATIVE_URLS = False
 
 # Theme
 THEME = 'theme'
+
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS      = ['sitemap', 'readtime', 'share_post', 'neighbors', 'optimize_images']
+SITEMAP      = {'format': 'xml'}
 
 # Sass compile
 with open(THEME + '/static/css/bulma.css', 'w') as css:

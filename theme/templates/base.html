@@ -15,7 +15,7 @@
   <meta name="description" content="{% if article is defined and article.description is defined %}{{ article.description }}{% elif page is defined and page.description is defined %}{{ page.description }}{% else %}{{ DESCRIPTION }}{% endif %}">
   <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}">
   <meta property="og:locale" content="en_US">
-  <meta property="og-type" content="{% if article is defined or page is defined %}article{% else %}profile{% endif %}">
+  <meta property="og:type" content="{% if article is defined or page is defined %}article{% else %}profile{% endif %}">
   <meta property="og:title" content="{% if article is defined and article.title is defined %}{{ article.title }}{% elif page is defined and page.title is defined %}{{ page.title }}{% else %}{{ SITENAME }}{% endif %}">
   <meta property="og:description" content="{% if article is defined and article.description is defined %}{{ article.description }}{% elif page is defined and page.description is defined %}{{ page.description }}{% else %}{{ DESCRIPTION }}{% endif %}">
   <meta property="og:url" content="{{ SITEURL }}{% if article is defined and article.url is defined %}/{{ article.url }}{% elif page is defined and page.url is defined %}/{{ page.save_as }}{% endif %}">
@@ -126,5 +126,21 @@
   <script defer src="{{ SITEURL }}/theme/js/main.min.js?0"></script>
   <script defer src="{{ SITEURL }}/theme/js/all.min.js?0"></script>
   <script defer src="{{ SITEURL }}/theme/js/fontawesome.min.js?0"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "{{ AUTHOR }}",
+      "url": "{{ SITEURL }}",
+      "sameAs": [
+        "https://twitter.com/PouyaAbbassi",
+        "https://www.goodreads.com/user/show/77351313-pouya",
+        "https://devheroes.club/?u=pouya-abbassi",
+        "https://gitlab.com/pouya-abbassi/"
+      ]
+    }
+  </script>
+{% include "gosquared.html" %}
+{% include "google.html" %}
 </body>
 </html>
