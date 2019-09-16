@@ -46,7 +46,7 @@ RELATIVE_URLS = False
 THEME = 'theme'
 
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS      = ['sitemap', 'readtime', 'share_post', 'neighbors', 'optimize_images']
+PLUGINS      = ['sitemap', 'readtime', 'share_post', 'neighbors', 'optimize_images', 'optimize_files']
 SITEMAP      = {'format': 'xml'}
 
 # Sass compile

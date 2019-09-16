@@ -8,6 +8,7 @@ pages:
   - pip install -r requirements.txt
   - npm install svgo jpegtran
   - make publish
+  - python createfiles.py
   artifacts:
     paths:
     - output
