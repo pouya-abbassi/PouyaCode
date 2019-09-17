@@ -6,10 +6,10 @@
   <title>{% if article is defined and article.title is defined %}{{ article.title }}{% elif page is defined and page.title is defined %}{{ page.title }}{% else %}{{ SITENAME }}{% endif %}</title>
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bulma.css?0">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/theme/images/favicon/apple-touch-icon.png?0">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ SITEURL }}/theme/images/favicon/favicon-32x32.png?0">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ SITEURL }}/theme/images/favicon/favicon-16x16.png?0">
-  <link rel="icon" type="image/svg+xml" href="{{ SITEURL }}/theme/images/favicon/favicon.svg?0">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/theme/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ SITEURL }}/theme/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ SITEURL }}/theme/images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/svg+xml" href="{{ SITEURL }}/theme/images/favicon/favicon.svg">
   <link rel="manifest" href="{{ SITEURL }}/theme/images/favicon/site.webmanifest?0">
   <meta name="author" content="{{ AUTHOR }}">
   <meta name="description" content="{% if article is defined and article.description is defined %}{{ article.description }}{% elif page is defined and page.description is defined %}{{ page.description }}{% else %}{{ DESCRIPTION }}{% endif %}">
@@ -120,7 +120,7 @@
   <footer class="footer">
     <div class="has-text-centered">
       <p><span title="It works on my machine!">¯\_(ツ)_/¯</span>
-      <br><i class="fas fa-mug-hot" title="On the eighth day God created coffee."></i> {{ AUTHOR }} <i class="fas fa-hand-spock" title="Live long and prosper."></i></p>
+      <br><i class="fas fa-mug-hot" title="On the eighth day God created coffee."></i>&nbsp;{{ AUTHOR }}&nbsp;<i class="fas fa-hand-spock" title="Live long and prosper."></i></p>
     </div>
   </footer>
   <script defer src="{{ SITEURL }}/theme/js/main.min.js?0"></script>
