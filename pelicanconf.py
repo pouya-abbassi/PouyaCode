@@ -33,7 +33,7 @@ BLOGROLL = (
 SOCIAL = (
         ('Gitlab', 'https://gitlab.com/pouya-abbassi/', 'fab fa-gitlab'),
         ('Devheroes', 'https://devheroes.club/?u=pouya-abbassi', 'fas fa-hands-helping'),
-        ('Goodreads', 'https://www.goodreads.com/user/show/77351313-pouya', 'fab fa-goodreads'),
+        ('Goodreads', 'https://www.goodreads.com/pouyacode', 'fab fa-goodreads'),
         ('Atom feed', 'feeds/all.atom.xml', 'fas fa-rss'),
         )
 
