@@ -16,6 +16,8 @@ TIMEZONE = 'Asia/Tehran'
 
 DEFAULT_LANG = 'en'
 
+PELICAN_VERSION = os.popen('pelican --version').readline().strip()
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'

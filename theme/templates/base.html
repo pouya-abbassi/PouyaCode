@@ -11,9 +11,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ SITEURL }}/theme/images/favicon/favicon-16x16.png">
   <link rel="icon" type="image/svg+xml" href="{{ SITEURL }}/theme/images/favicon/favicon.svg">
   <link rel="manifest" href="{{ SITEURL }}/theme/images/favicon/site.webmanifest?0">
-  <meta name="author" content="{{ AUTHOR }}">
-  <meta name="description" content="{% if article is defined and article.description is defined %}{{ article.description }}{% elif page is defined and page.description is defined %}{{ page.description }}{% else %}{{ DESCRIPTION }}{% endif %}">
   <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}">
+  <meta name="description" content="{% if article is defined and article.description is defined %}{{ article.description }}{% elif page is defined and page.description is defined %}{{ page.description }}{% else %}{{ DESCRIPTION }}{% endif %}">
+  <meta name="author" content="{{ AUTHOR }}">
+  <meta name="generator" content="Pelican {{ PELICAN_VERSION }}">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="{% if article is defined or page is defined %}article{% else %}profile{% endif %}">
   <meta property="og:title" content="{% if article is defined and article.title is defined %}{{ article.title }}{% elif page is defined and page.title is defined %}{{ page.title }}{% else %}{{ SITENAME }}{% endif %}">
