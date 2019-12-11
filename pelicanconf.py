@@ -36,6 +36,7 @@ SOCIAL = (
         ('Gitlab', 'https://gitlab.com/pouya-abbassi/', 'fab fa-gitlab'),
         ('Devheroes', 'https://devheroes.club/?u=pouya-abbassi', 'fas fa-hands-helping'),
         ('Goodreads', 'https://www.goodreads.com/pouyacode', 'fab fa-goodreads'),
+        ('Email', 'mailto:&#112;&#99;&#111;&#100;&#101;&#64;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;', 'fas fa-at'),
         ('Atom feed', 'feeds/all.atom.xml', 'fas fa-rss'),
         )
 
