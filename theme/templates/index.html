@@ -25,7 +25,7 @@
     <div class="column is-three-fifths">
       <article class="content">
         <header>
-          <h2 class="title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}" class="article-title"><span class="icon"><i class="{% if article.icon is defined %}{{ article.icon }}{% else %}fas fa-paperclip{% endif %}"></i></span>&nbsp;{{ article.title }}</a><small class="subtitle"><br>— {{article.description}}</small></h2>
+          <h2 class="title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}" class="article-title"><span class="icon"><i class="{% if article.icon is defined %}{{ article.icon }}{% else %}fas fa-paperclip{% endif %}"></i></span>&nbsp;{{ article.title }}</a><small class="subtitle">{% if article.description is defined %}<br>—&nbsp;{{article.description}}{% endif %}</small></h2>
         </header>
         <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
       </article>

@@ -3,7 +3,7 @@
 <head>
   {% block head %}
   <meta charset="utf-8" />
-  <title>{% if article is defined and article.title is defined %}{{ article.title }}{% elif page is defined and page.title is defined %}{{ page.title }}{% else %}{{ SITENAME }}{% endif %}</title>
+  <title>{% if article is defined and article.title is defined %}{{ article.title|title }}{% if article.description is defined %}, {{ article.description }}{% endif %}{% elif page is defined and page.title is defined %}{{ page.title|title }}{% if page.description is defined %}, {{ page.description }}{% endif %}{% else %}{{ SITENAME }}{% endif %}</title>
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bulma.css?0">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/theme/images/favicon/apple-touch-icon.png">
@@ -17,15 +17,15 @@
   <meta name="generator" content="Pelican {{ PELICAN_VERSION }}">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="{% if article is defined or page is defined %}article{% else %}profile{% endif %}">
-  <meta property="og:title" content="{% if article is defined and article.title is defined %}{{ article.title }}{% elif page is defined and page.title is defined %}{{ page.title }}{% else %}{{ SITENAME }}{% endif %}">
-  <meta property="og:description" content="{% if article is defined and article.description is defined %}{{ article.description }}{% elif page is defined and page.description is defined %}{{ page.description }}{% else %}{{ DESCRIPTION }}{% endif %}">
+  <meta property="og:title" content="{% if article is defined and article.title is defined %}{{ article.title|title }}{% if article.description is defined %}, {{article.description }}{% endif %}{% elif page is defined and page.title is defined %}{{ page.title|title }}{% if page.description is defined %}, {{ page.description }}{% endif %}{% else %}{{ SITENAME }}{% endif %}">
+  <meta property="og:description" content="{% if article is defined and article.summary is defined %}{{ article.summary|striptags }}{% elif page is defined and page.summary is defined %}{{ page.summary|striptags }}{% else %}{{ DESCRIPTION }}{% endif %}">
   <meta property="og:url" content="{{ SITEURL }}{% if article is defined and article.url is defined %}/{{ article.url }}{% elif page is defined and page.url is defined %}/{{ page.save_as }}{% endif %}">
   <meta property="og:image" content="{{ SITEURL }}{% if article is defined and article.image is defined %}/theme/images/articles/{{ article.image }}{% elif page is defined and page.image is defined %}/theme/images/pages/{{ page.image }}{% else %}/theme/images/avatar-original.png{% endif %}">
   <meta property="og:site_name" content="{{ SITENAME }}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@pouyaabbassi">
-  <meta name="twitter:title" content="{% if article is defined and article.title is defined %}{{ article.title }}{% elif page is defined and page.title is defined %}{{ page.title }}{% else %}{{ SITENAME }}{% endif %}">
-  <meta name="twitter:description" content="{% if article is defined and article.description is defined %}{{ article.description }}{% elif page is defined and page.description is defined %}{{ page.description }}{% else %}{{ DESCRIPTION }}{% endif %}">
+  <meta name="twitter:title" content="{% if article is defined and article.title is defined %}{{ article.title|title }}{% if article.description is defined %}, {{ article.description }}{% endif %}{% elif page is defined and page.title is defined %}{{ page.title }}{% if page.description is defined %}, {{ page.description }}{% endif %}{% else %}{{ SITENAME }}{% endif %}">
+  <meta name="twitter:description" content="{% if article is defined and article.summary is defined %}{{ article.summary|striptags }}{% elif page is defined and page.summary is defined %}{{ page.summary|striptags }}{% else %}{{ DESCRIPTION }}{% endif %}">
   <meta name="twitter:image" content="{{ SITEURL }}{% if article is defined and article.image is defined %}/theme/images/articles/{{ article.image }}{% elif page is defined and page.image is defined %}/theme/images/pages/{{ page.image }}{% else %}/theme/images/avatar-original.png{% endif %}">
   <meta name="twitter:image:alt" content="{% if article is defined and article.title is defined %}{{ article.title }}{% elif page is defined and page.title is defined %}{{ page.title }}{% else %}{{ DESCRIPTION }}{% endif %}">
   {% if FEED_ALL_ATOM %}
@@ -127,20 +127,6 @@
   <script defer src="{{ SITEURL }}/theme/js/main.min.js?0"></script>
   <script defer src="{{ SITEURL }}/theme/js/all.min.js?0"></script>
   <script defer src="{{ SITEURL }}/theme/js/fontawesome.min.js?0"></script>
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "name": "{{ AUTHOR }}",
-      "url": "{{ SITEURL }}",
-      "sameAs": [
-        "https://twitter.com/PouyaAbbassi",
-        "https://www.goodreads.com/user/show/77351313-pouya",
-        "https://devheroes.club/?u=pouya-abbassi",
-        "https://gitlab.com/pouya-abbassi/"
-      ]
-    }
-  </script>
 {% include "gosquared.html" %}
 {% include "google.html" %}
 </body>

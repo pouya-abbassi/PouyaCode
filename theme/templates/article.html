@@ -10,11 +10,11 @@
   {% endif %}
 
   {% if article.description %}
-    <meta name="description" content="{{article.description}}" />
+    <meta name="description" content="{{ article.description }}" />
   {% endif %}
 
   {% for tag in article.tags %}
-    <meta name="tags" content="{{tag}}" />
+    <meta name="tags" content="{{ tag }}" />
   {% endfor %}
 
 {% endblock %}
@@ -36,7 +36,7 @@
     <div class="column is-three-fifths" style="{% if article.image is defined %}background-image:radial-gradient(#0002,#222),url('{{ SITEURL }}/theme/images/articles/{{ article.image }}');height: 50%;background-position:center;background-repeat:no-repeat;background-size:cover;position:relative;border:1px solid #333;border-radius:1rem;{% else %}border:1px solid #333;border-radius:1rem;background:#333;box-shadow:inset 0 0 3rem 2rem #222;{% endif %}margin-bottom:2rem">
       {% if article.image is defined %}<button onclick="imageshow()" class="button is-text icon is-medium article-image"><i class="fas fa-image"></i></button>{% endif %}
       <header>
-          <h2 class="title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}" class="article-title"><span class="icon"><i class="{% if article.icon is defined %}{{ article.icon }}{% else %}fas fa-paperclip{% endif %}"></i></span>&nbsp;{{ article.title }}</a><small class="subtitle"><br>— {{article.description}}</small></h2>
+        <h1 class="title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}" class="article-title"><span class="icon"><i class="{% if article.icon is defined %}{{ article.icon }}{% else %}fas fa-paperclip{% endif %}"></i></span>&nbsp;{{ article.title }}</a><small class="subtitle">{% if article.description is defined %}<br>—&nbsp;{{ article.description }}{% endif %}</small></h1>
  {% import 'translations.html' as translations with context %}
  {{ translations.translations_for(article) }}
       </header>
@@ -83,6 +83,9 @@
         {{ article.content }}
       </div>
     {% if article.share_post is defined and article.status != 'draft' %}
+    <p class="feedback">
+        <a href="{{ FEEDBACK }}?subject={{ article.title }} ({{ SITENAME }} feedback)"><i class="fas fa-at"></i>&nbsp;Send feedback</a>.
+    </p>
     <div class="share">
       <p id="post-share-links">
         <a href="{{article.share_post['diaspora']}}" class="button is-text" target="_blank" rel="nofollow" title="Share on Diaspora"><i class="fab fa-diaspora"></i></a>
@@ -95,21 +98,21 @@
       </p>
     </div>
     {% endif %}
-     {% if article.prev_article_in_category or article.next_article_in_category or article.prev_article or article.next_article %}
+    {% if article.prev_article_in_category or article.next_article_in_category or article.prev_article or article.next_article %}
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
       {% if article.prev_article_in_category %}
-      <a href="{{ SITEURL }}/{{ article.prev_article_in_category.url }}" class="pagination-previous" title="Previous article in category"><i class="{% if article.prev_article_in_category.icon %}{{ article.prev_article_in_category.icon }}{% else %}fas fa-paperclip{% endif %}"></i> {{ article.prev_article_in_category.title }}</a>
+      <a href="{{ SITEURL }}/{{ article.prev_article_in_category.url }}" class="pagination-previous" title="Previous article in category"><i class="{% if article.prev_article_in_category.icon %}{{ article.prev_article_in_category.icon }}{% else %}fas fa-paperclip{% endif %}"></i>&nbsp;{{ article.prev_article_in_category.title }}</a>
       {% elif article.prev_article %}
-      <a href="{{ SITEURL }}/{{ article.prev_article.url }}" class="pagination-previous" title="Previous article"><i class="{% if article.prev_article.icon %}{{ article.prev_article.icon }}{% else %}fas fa-paperclip{% endif %}"></i> {{ article.prev_article.title }}</a>
+      <a href="{{ SITEURL }}/{{ article.prev_article.url }}" class="pagination-previous" title="Previous article"><i class="{% if article.prev_article.icon %}{{ article.prev_article.icon }}{% else %}fas fa-paperclip{% endif %}"></i>&nbsp;{{ article.prev_article.title }}</a>
       {% else %}
-      <a href="{{ SITEURL }}" class="pagination-previous" title="Latest articles"><i class="fas fa-mug-hot"></i> Home page</a>
+      <a href="{{ SITEURL }}" class="pagination-previous" title="Latest articles"><i class="fas fa-mug-hot"></i>&nbsp;Home page</a>
       {% endif %}
       {% if article.next_article_in_category %}
-      <a href="{{ SITEURL }}/{{ article.next_article_in_category.url }}" class="pagination-next" title="Next article in category"><i class="{% if article.next_article_in_category.icon %}{{ article.next_article_in_category.icon }}{% else %}fas fa-paperclip{% endif %}"></i> {{ article.next_article_in_category.title }}</a>
+      <a href="{{ SITEURL }}/{{ article.next_article_in_category.url }}" class="pagination-next" title="Next article in category"><i class="{% if article.next_article_in_category.icon %}{{ article.next_article_in_category.icon }}{% else %}fas fa-paperclip{% endif %}"></i>&nbsp;{{ article.next_article_in_category.title }}</a>
       {% elif article.next_article %}
-      <a href="{{ SITEURL }}/{{ article.next_article.url }}" class="pagination-next" title="Previous article"><i class="{% if article.next_article.icon %}{{ article.next_article.icon }}{% else %}fas fa-paperclip{% endif %}"></i> {{ article.next_article.title }}</a>
+      <a href="{{ SITEURL }}/{{ article.next_article.url }}" class="pagination-next" title="Previous article"><i class="{% if article.next_article.icon %}{{ article.next_article.icon }}{% else %}fas fa-paperclip{% endif %}"></i>&nbsp;{{ article.next_article.title }}</a>
       {% else %}
-      <a href="{{ SITEURL }}" class="pagination-next" title="Latest articles"><i class="fas fa-mug-hot"></i> Home page</a>
+      <a href="{{ SITEURL }}" class="pagination-next" title="Latest articles"><i class="fas fa-mug-hot"></i>&nbsp;Home page</a>
       {% endif %}
       <ul class="pagination-list">
         <li>Other articles<li>
