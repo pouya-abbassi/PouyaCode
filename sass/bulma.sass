@@ -97,6 +97,11 @@ $subtitle-family: $family-serif
 $footer-background-color: $nav-background
 $footer-color: $nav-primary
 
+$code: #00AA00
+$code-background: #333333
+$pre: #00AA00
+$pre-background: #333333
+
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @import "sass/utilities/_all"
 @import "sass/base/_all"
@@ -109,7 +114,7 @@ $footer-color: $nav-primary
 
 html, body
   scrollbar-width: thin
-  scrollbar-color: #000 #222
+  scrollbar-color: #000000 #222222
   background: $primary-background
   color: $primary-color
 
@@ -185,6 +190,12 @@ a
 
 .content a, table a
   text-decoration: underline dotted
+  &:hover
+    text-decoration: underline
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6
+  color: $primary-color
+  font-family: $title-family
 
 .content blockquote
   border-left: 0.25rem wavy $primary-color
@@ -195,8 +206,12 @@ a
 blockquote p
     padding: 0
 
+hr
+  background: $primary-color
+
 .pagination-previous, .pagination-next, .pagination-link
   color: $primary-color
+  font-family: $title-family
   border-color: $primary-color
   &:hover
     color: $primary-color
@@ -208,8 +223,15 @@ p.readtime
   opacity: 0.8
   font-family: $title-family
 
-.shares
-  float: right
+.share
+  text-align: right
+
+.feedback
+  font-family: $title-family
+  a
+    text-decoration: underline dotted
+    &:hover
+      text-decoration: underline
 
 .button.is-text
   color: $primary-color
