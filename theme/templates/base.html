@@ -12,7 +12,7 @@
   <link rel="icon" type="image/svg+xml" href="{{ SITEURL }}/theme/images/favicon/favicon.svg">
   <link rel="manifest" href="{{ SITEURL }}/theme/images/favicon/site.webmanifest?0">
   <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}">
-  <meta name="description" content="{% if article is defined and article.description is defined %}{{ article.description }}{% elif page is defined and page.description is defined %}{{ page.description }}{% else %}{{ DESCRIPTION }}{% endif %}">
+  <meta name="description" content="{% if article is defined and article.summary is defined %}{{ article.summary|striptags }}{% elif page is defined and page.summary is defined %}{{ page.summary|striptags }}{% else %}{{ DESCRIPTION }}{% endif %}">
   <meta name="author" content="{{ AUTHOR }}">
   <meta name="generator" content="Pelican {{ PELICAN_VERSION }}">
   <meta property="og:locale" content="en_US">
