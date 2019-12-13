@@ -6,11 +6,12 @@ pages:
   - apk update && apk add make gcc build-base npm git optipng zlib
   - git clone https://github.com/pouya-abbassi/pelican-plugins.git
   - pip install -r requirements.txt
-  - npm install svgo jpegtran
+  - npm install -g svgo jpegtran
   - make publish
   - python createfiles.py
+  - mv output public
   artifacts:
     paths:
-    - output
+    - public
   only:
   - master
