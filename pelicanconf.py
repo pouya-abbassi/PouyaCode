@@ -38,7 +38,7 @@ SOCIAL = (
         ('Devheroes', 'https://devheroes.club/?u=pouya-abbassi', 'fas fa-hands-helping'),
         ('Goodreads', 'https://www.goodreads.com/pouyacode', 'fab fa-goodreads'),
         ('Email', FEEDBACK, 'fas fa-at'),
-        ('Atom feed', 'feeds/all.atom.xml', 'fas fa-rss'),
+        ('Atom feed', SITEURL + '/feeds/all.atom.xml', 'fas fa-rss'),
         )
 
 DEFAULT_PAGINATION = 10
@@ -50,7 +50,7 @@ RELATIVE_URLS = False
 THEME = 'theme'
 
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS      = ['sitemap', 'readtime', 'share_post', 'neighbors', 'optimize_images', 'optimize_files']
+PLUGINS      = ['readtime', 'share_post', 'neighbors']
 SITEMAP      = {'format': 'xml'}
 
 # Sass compile
