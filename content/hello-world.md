@@ -6,6 +6,7 @@ category: Personal
 image: hello-world.jpg
 icon: far fa-smile
 
+
 ## The first blog post
 If you want me to name one thing that's more difficult than programming, I'd say writing a blog post. Over the past few years, I built and rebuilt this blog many times using many blogging systems, crafting it for perfection, but not even once I could write a decent article in it.
 
@@ -22,8 +23,10 @@ I used [ProggyTiny](https://proggyfonts.net/download/) font to create my logo, I
 
 For other texts on this blog, you can see QuickSand, Roboto and ubuntu-mono, three eye-pleasing fonts, designed by talented people.
 
+
 ## Where to find me
 I'm not currently active on any social media, I don't really like them much. You might want to see some of my codes on  Gitlab, DevHeroes.club is the Q&A forum I love, and you can always find my favorite books on my GoodReads account. All linked on menu-bar, feel free to check them out.
+
 
 ## Bottom line
 If you read this, please let me know what you think. This is a static website and I don't want to use third-party commenting system, mostly for privacy reasons. So if you're interested, please send me an email and let me know what you think about my blog.
