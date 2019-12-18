@@ -29,3 +29,12 @@ function imageshow(){
 function imagehide(){
   document.getElementById('imagemodal').style.display = 'none';
 }
+
+document.onreadystatechange = function () {
+  if (document.readyState == "complete") {
+  var script = document.createElement('script'),
+    scripts = document.getElementsByTagName('script')[0];
+  script.src = "https://pouyacode.net/theme/js/fa.min.js?v=5.12.0";
+  scripts.parentNode.insertBefore(script, scripts);
+}
+}

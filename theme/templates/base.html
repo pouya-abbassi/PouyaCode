@@ -4,7 +4,7 @@
   {% block head %}
   <meta charset="utf-8" />
   <title>{% if article is defined and article.title is defined %}{{ article.title|title }}{% if article.description is defined %}, {{ article.description }}{% endif %}{% elif page is defined and page.title is defined %}{{ page.title|title }}{% if page.description is defined %}, {{ page.description }}{% endif %}{% else %}{{ SITENAME }}{% endif %}</title>
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bulma.css?0">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bulma.css?v=0">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/theme/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ SITEURL }}/theme/images/favicon/favicon-32x32.png">
@@ -124,8 +124,8 @@
       <br><i class="fas fa-mug-hot" title="On the eighth day God created coffee."></i>&nbsp;{{ AUTHOR }}&nbsp;<i class="fas fa-hand-spock" title="Live long and prosper."></i></p>
     </div>
   </footer>
-  <script defer src="{{ SITEURL }}/theme/js/main.min.js?0"></script>
-  <script async src="https://kit.fontawesome.com/14f644e009.js" crossorigin="anonymous" integrity="sha384-TDhFdBCp6zkFoOxFg2XaOsN4rWmrP4Tbzzaz0VKFgnk4mENBCgpW6mG7kamM0Yvy"></script>
+  <script defer src="{{ SITEURL }}/theme/js/main.min.js?v=0"></script>
+  <script>
 {% include "gosquared.html" %}
 {% include "google.html" %}
 </body>
