@@ -94,7 +94,7 @@
             </a>
             <div class="navbar-dropdown">
           {% for cat, null in categories %}
-             <a class="navbar-item{% if cat == category %} is-active{% endif %}" href="{{ siteurl }}/{{ cat.url }}">{{ cat }}</a>
+             <a class="navbar-item{% if cat == category %} is-active{% endif %}" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
           {% endfor %}
             </div>
           </div>

@@ -98,18 +98,18 @@
     {% if article.prev_article_in_category or article.next_article_in_category or article.prev_article or article.next_article %}
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
       {% if article.prev_article_in_category %}
-      <a href="{{ SITEURL }}/{{ article.prev_article_in_category.url }}" class="pagination-previous" title="Previous article in category"><i class="{% if article.prev_article_in_category.icon %}{{ article.prev_article_in_category.icon }}{% else %}fas fa-paperclip{% endif %}"></i>&nbsp;{{ article.prev_article_in_category.title }}</a>
+      <a href="{{ SITEURL }}/{{ article.prev_article_in_category.url }}" class="pagination-previous" title="{{ article.prev_article_in_category.title }}, {{ article.prev_article_in_category.description }}"><i class="{% if article.prev_article_in_category.icon %}{{ article.prev_article_in_category.icon }}{% else %}fas fa-paperclip{% endif %}"></i>&nbsp;{{ article.prev_article_in_category.title }}</a>
       {% elif article.prev_article %}
-      <a href="{{ SITEURL }}/{{ article.prev_article.url }}" class="pagination-previous" title="Previous article"><i class="{% if article.prev_article.icon %}{{ article.prev_article.icon }}{% else %}fas fa-paperclip{% endif %}"></i>&nbsp;{{ article.prev_article.title }}</a>
+      <a href="{{ SITEURL }}/{{ article.prev_article.url }}" class="pagination-previous" title="{{ article.prev_article.title }}, {{ article.prev_article.description }}"><i class="{% if article.prev_article.icon %}{{ article.prev_article.icon }}{% else %}fas fa-paperclip{% endif %}"></i>&nbsp;{{ article.prev_article.title }}</a>
       {% else %}
-      <a href="{{ SITEURL }}" class="pagination-previous" title="Latest articles"><i class="fas fa-mug-hot"></i>&nbsp;Home page</a>
+      <a href="{{ SITEURL }}" class="pagination-previous" title="Latest articles"><i class="fas fa-home"></i>&nbsp;Home page</a>
       {% endif %}
       {% if article.next_article_in_category %}
-      <a href="{{ SITEURL }}/{{ article.next_article_in_category.url }}" class="pagination-next" title="Next article in category"><i class="{% if article.next_article_in_category.icon %}{{ article.next_article_in_category.icon }}{% else %}fas fa-paperclip{% endif %}"></i>&nbsp;{{ article.next_article_in_category.title }}</a>
+      <a href="{{ SITEURL }}/{{ article.next_article_in_category.url }}" class="pagination-next" title="{{ article.next_article_in_category.title }}, {{ article.next_article_in_category.description }}"><i class="{% if article.next_article_in_category.icon %}{{ article.next_article_in_category.icon }}{% else %}fas fa-paperclip{% endif %}"></i>&nbsp;{{ article.next_article_in_category.title }}</a>
       {% elif article.next_article %}
-      <a href="{{ SITEURL }}/{{ article.next_article.url }}" class="pagination-next" title="Previous article"><i class="{% if article.next_article.icon %}{{ article.next_article.icon }}{% else %}fas fa-paperclip{% endif %}"></i>&nbsp;{{ article.next_article.title }}</a>
+      <a href="{{ SITEURL }}/{{ article.next_article.url }}" class="pagination-next" title="{{ article.next_article.title }}, {{ article.next_article.description }}"><i class="{% if article.next_article.icon %}{{ article.next_article.icon }}{% else %}fas fa-paperclip{% endif %}"></i>&nbsp;{{ article.next_article.title }}</a>
       {% else %}
-      <a href="{{ SITEURL }}" class="pagination-next" title="Latest articles"><i class="fas fa-mug-hot"></i>&nbsp;Home page</a>
+      <a href="{{ SITEURL }}" class="pagination-next" title="Latest articles"><i class="fas fa-home"></i>&nbsp;Home page</a>
       {% endif %}
       <ul class="pagination-list">
         <li>Other articles<li>
