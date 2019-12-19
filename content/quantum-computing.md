@@ -1,7 +1,8 @@
 Title: Quantum Computing
 Description: Is this an evolution?
-Date: 2019-12-14 19:28
+Date: 2019-12-19 10:42
 category: Technology
+tags: quantum, computer, technology
 image: quantum-computing.jpg
 icon: fas fa-atom
 
