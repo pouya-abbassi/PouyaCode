@@ -38,7 +38,7 @@ SOCIAL = (
         ('Devheroes', 'https://devheroes.club/?u=pouya-abbassi', 'fas fa-hands-helping'),
         ('Goodreads', 'https://www.goodreads.com/pouyacode', 'fab fa-goodreads'),
         ('Email', FEEDBACK, 'fas fa-at'),
-        ('Atom feed', '/feeds/all.atom.xml', 'fas fa-rss'),
+        ('Atom feed', FEED_ALL_ATOM, 'fas fa-rss'),
         )
 
 DEFAULT_PAGINATION = 10
