@@ -12,8 +12,7 @@
       {% for article in dates %}
         <tr>
           <th>{{ article.locale_date }}</th>
-          <td><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></td>
-        </tr>
+          <td><a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.summary|striptags|replace('"', "'") }}"><i class="{{ article.icon }}"></i>&nbsp;{{ article.title }},&nbsp;{{ article.description }}</a></td></tr>
       {% endfor %}
       </table>
       </div>
