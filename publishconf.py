@@ -19,7 +19,7 @@ CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
-PLUGINS      = PLUGINS + ['sitemap', 'optimize_images', 'optimize_files']
+PLUGINS += ['sitemap', 'optimize_images', 'optimize_files']
 
 # Following items are often useful when publishing
 
