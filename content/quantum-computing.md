@@ -29,7 +29,7 @@ Here came multi-core processors. But don't get too excited, even that stopped so
 
 
 ### Quantum computing to the rescue!
-![Schrodinger's cat](/theme/images/articles/quantum-computing/schrodinger.svg)
+![Schrodinger's cat](/theme/images/articles/quantum-computing/schrodinger.png)
 (Schrodinger's cat is both dead and alive. Image from [wikipedia](https://commons.wikimedia.org/wiki/File:Schrodingers_cat.svg))
 
 Unlike classical computers, quantum computers don't rely on "binary" phases. They still have *bits* but a different kind of them, called "qubit" (short for QUantum BIT).
