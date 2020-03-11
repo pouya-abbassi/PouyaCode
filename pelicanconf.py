@@ -38,6 +38,7 @@ SOCIAL = (
         ('Devheroes', 'https://devheroes.club/?u=pouya-abbassi', 'fas fa-hands-helping'),
         ('Goodreads', 'https://www.goodreads.com/pouyacode', 'fab fa-goodreads'),
         ('Email', FEEDBACK, 'fas fa-at'),
+        ('PGP', SITEURL + '/pgp.html', 'fas fa-lock'),
         ('Atom feed', FEED_ALL_ATOM, 'fas fa-rss'),
         )
 
