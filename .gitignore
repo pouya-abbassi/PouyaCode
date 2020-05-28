@@ -1,7 +1,9 @@
 __pycache__
+*.pyc
 .sass-cache
 theme/static/css/bulma.css
 output
+public
 *.old.jpg
 pelican-plugins
 .*.swp
