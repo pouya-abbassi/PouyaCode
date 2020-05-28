@@ -35,9 +35,9 @@ BLOGROLL = (
 # Social widget
 SOCIAL = (
         ('Gitlab', 'https://gitlab.com/pouya-abbassi/', 'fab fa-gitlab'),
-        ('Devheroes', 'https://devheroes.club/?u=pouya-abbassi', 'fas fa-hands-helping'),
         ('Goodreads', 'https://www.goodreads.com/pouyacode', 'fab fa-goodreads'),
         ('Email', FEEDBACK, 'fas fa-at'),
+        ('GPG - 8CC7EB1535634205E9C2AAD9AF5A5A4AD4FD8797', '/theme/pouyacode.pub.gpg', 'fas fa-fingerprint'),
         ('Atom feed', FEED_ALL_ATOM, 'fas fa-rss'),
         )
 
