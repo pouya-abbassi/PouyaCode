@@ -36,5 +36,15 @@ document.onreadystatechange = function () {
     scripts = document.getElementsByTagName('script')[0];
   script.src = "https://pouyacode.net/theme/js/fa.min.js?v=5.12.0";
   scripts.parentNode.insertBefore(script, scripts);
-}
+
+  // Email obfuscation using ROT13 for navbar.
+  let rot13 = document.getElementById('email').href.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
+  document.getElementById('email').href = rot13;
+
+  // Email obfuscation using ROT13 for articles.
+  let subject = document.getElementsByClassName('article-title')[0].innerHTML;
+  subject = subject.substr(subject.search('&nbsp')+6);
+  rot13 += '?subject=' + subject;
+  document.getElementById('feedback').innerHTML = '<a id="feedback" href="' + rot13 + '"><i class="fas fa-at"></i>&nbsp;Send feedback</a>';
+  }
 }

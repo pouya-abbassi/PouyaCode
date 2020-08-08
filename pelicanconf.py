@@ -9,7 +9,8 @@ AUTHOR = 'Pouya Abbassi'
 SITENAME = 'PouyaCode'
 DESCRIPTION = 'A place for my thoughts.'
 SITEURL = 'http://localhost:8000'
-FEEDBACK = 'mailto:&#112;&#99;&#111;&#100;&#101;&#64;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'
+EMAIL = '<b>p</b>code<span>net</span>&#64;proton<i>something</i>mail&#46;com'
+EMAIL_ROT13 = 'znvygb:cpbqr@cebgbaznvy.pbz' # ROT13
 
 PATH = 'content'
 
@@ -36,7 +37,7 @@ BLOGROLL = (
 SOCIAL = (
         ('Gitlab', 'https://gitlab.com/pouya-abbassi/', 'fab fa-gitlab'),
         ('Goodreads', 'https://www.goodreads.com/pouyacode', 'fab fa-goodreads'),
-        ('Email', FEEDBACK, 'fas fa-at'),
+        ('Email', EMAIL_ROT13, 'fas fa-at'),
         ('PGP', 'https://pouyacode.net/pgp.html', 'fas fa-lock'),
         ('Atom feed', FEED_ALL_ATOM, 'fas fa-rss'),
         )
