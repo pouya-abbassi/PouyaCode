@@ -103,7 +103,7 @@
 
         <div class="navbar-end">
             {% for name, url, icon in SOCIAL %}
-	    <a class="navbar-item is-large" href="{{ url }}" id="{{ name|lower }}" title="{{ name }}" rel="nofollow" target="_blank">
+	    <a class="navbar-item is-large" href="{{ url }}" id="{{ name|lower|replace(" ", "-") }}" title="{{ name }}" rel="nofollow" target="_blank">
               <span class="is-large icon">
                 <i class="{{ icon }} fa-lg" aria-hidden="true"></i>
               </span>
