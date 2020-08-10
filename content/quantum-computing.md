@@ -142,7 +142,7 @@ Well, they did the job. They finally did something with quantum computers that w
 
 But that's not really as useful as they claim. You can buy a random number generator USB device for $50.
 
-If you're on Unix, you can rely on `/dev/random`. You can even write your own random number generator in your favorite language and read user's mouse move, thermal information of motherboard and some other sources, add Unix timestamp to this chaos and then apply a hash algorithm on it (don't do that. there are cryptography libraries for that, much better than what you and I can write). 
+If you're on Unix, you can rely on `/dev/random`. You can even write your own random number generator in your favorite language and read user's mouse move, thermal information of motherboard and some other sources, add Unix timestamp to this chaos and then apply a hash algorithm on it (don't do that. there are cryptography libraries for that, much better than what you and I can write).
 
 We already have free random number generators! Good enough that our life already depends on it.
 
@@ -153,7 +153,7 @@ The only good news is we are laying foundation for future projects. We might be 
 
 ### Where does it belong?
 ![DNA strand construction](/theme/images/articles/quantum-computing/dna.jpg)
-(DNA strand construction. Image from [pixfuel](https://www.pxfuel.com/en/free-photo-jqksj))
+(DNA strand construction. Image from [pxfuel](https://www.pxfuel.com/en/free-photo-jqksj))
 
 Quantum computers are different kind of computers. They are good at different kind of tasks. I certainly hope we reach the moment when they can do a real job. Some industries really need this way of revolution.
 
