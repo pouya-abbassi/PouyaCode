@@ -11,7 +11,7 @@ Here's [my PGP key](/theme/files/pcode.asc). Keep it close somewhere for more se
 
 And the fingerprint:
 
-```txt
+```text
 pub   rsa4096 2020-01-26 [SC]
       8CC7 EB15 3563 4205 E9C2  AAD9 AF5A 5A4A D4FD 8797
 ```
