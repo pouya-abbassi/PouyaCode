@@ -76,22 +76,6 @@ def modify_img():
         optimize(dirpath, name)
 
 
-def pgp_sign():
-    """Sign all html files"""
-    cmd = 'gpg -u 8CC7EB1535634205E9C2AAD9AF5A5A4AD4FD8797 --clearsign {filename}'
-    files = create_list()
-    for each in files:
-        command = 'echo " -->" | cat - {filename} > temp && mv temp {filename} && echo "\n<!--" >> {filename}'
-        command = command.format(filename=each)
-        call(command, shell=True)
-        command = 'gpg -u 8CC7EB1535634205E9C2AAD9AF5A5A4AD4FD8797 --clearsign {filename}'
-        command = command.format(filename=each)
-        call(command, shell=True)
-        command = 'echo "<!--" | cat - {filename}.asc > {filename} && rm {filename}.asc && echo "-->" >> {filename}'
-        command = command.format(filename=each)
-        call(command, shell=True)
-
-
 def create_list():
     """Create list of html files in public directory."""
     walk_dir = 'public'
@@ -123,4 +107,3 @@ if __name__ == '__main__':
     create()
     modify_url()
     modify_img()
-    pgp_sign()

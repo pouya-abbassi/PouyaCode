@@ -69,7 +69,7 @@ else
 endif
 
 publish:
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS) && python3 monkey-patch.py
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS) && python3 monkey-patch.py && ./monkey-patch.sh
 
 
 .PHONY: html help clean regenerate serve serve-global devserver publish 
