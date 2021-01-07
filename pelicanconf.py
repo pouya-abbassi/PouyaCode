@@ -10,7 +10,7 @@ SITENAME = 'PouyaCode'
 DESCRIPTION = 'A place for my thoughts.'
 SITEURL = 'http://localhost:8000'
 EMAIL = '<b>p</b>code<span>net</span>&#64;proton<i>something</i>mail&#46;com'
-EMAIL_ROT13 = 'znvygb:cpbqr@cebgbaznvy.pbz' # ROT13
+EMAIL_ROT13 = 'znvygb:zr@cbhlnpbqr.arg'
 FINGERPRINT = '8CC7EB1535634205E9C2AAD9AF5A5A4AD4FD8797'
 
 PATH = 'content'
@@ -67,4 +67,3 @@ with open('theme/static/js/main.js') as js_file:
             minified = jsmin(js_file.read())
             min_file.write(minified)
             min_file.close()
-
