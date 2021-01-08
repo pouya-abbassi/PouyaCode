@@ -45,6 +45,6 @@ document.onreadystatechange = function () {
   let subject = document.getElementsByClassName('article-title')[0].innerHTML;
   subject = subject.substr(subject.search('&nbsp')+6);
   rot13 += '?subject=' + subject;
-  document.getElementById('feedback').innerHTML = '<a id="feedback" href="' + rot13 + '"><i class="fas fa-at"></i>&nbsp;Send feedback</a>';
+  document.getElementById('feedback').innerHTML = '<a href="' + rot13 + '"><i class="fas fa-at"></i>&nbsp;Send feedback</a>';
   }
 }
