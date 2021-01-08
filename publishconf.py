@@ -21,6 +21,11 @@ DELETE_OUTPUT_DIRECTORY = True
 
 PLUGINS += ['sitemap', 'optimize_images', 'optimize_files']
 
+SITEMAP = {
+    'format': 'xml',
+    'exclude': ['tag/', 'category/', 'author/', 'tags.html', 'categories.html', 'archives.html'],
+}
+
 # Following items are often useful when publishing
 
 #DISQUS_SITENAME = ""

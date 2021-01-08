@@ -54,7 +54,6 @@ THEME = 'theme'
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS      = ['readtime', 'share_post', 'neighbors']
-SITEMAP      = {'format': 'xml'}
 
 # Sass compile
 with open(THEME + '/static/css/bulma.css', 'w') as css:
