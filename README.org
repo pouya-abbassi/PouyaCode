@@ -1,0 +1,37 @@
+[PouyaCode](https://pouyacode.net) built using [Pelican](https://blog.getpelican.com) & [Bulma](https://bulma.io).
+
+* Notes to myself
+** Run:
+   - Dev:
+   ```
+   pelican -rl
+   ```
+
+   - Deploy:
+   ```
+   make publish
+   ```
+
+   - Sass:
+   ```
+   sass -t compress --watch sass/bulma.sass:output/theme/css/bulma.css
+   ```
+
+
+** Subresource integrity:
+   ```
+   cat FILENAME.js | openssl dgst -sha384 -binary | openssl base64 -A
+   ```
+
+
+** ROT13:
+   - Create:
+   ```
+   tr 'A-Za-z' 'N-ZA-Mn-za-m' <<< "mailto:me@pouyacode.net"
+   echo "mailto:me@pouyacode.net" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+   ```
+   - Reverse:
+   ```
+   tr 'N-ZA-Mn-za-m' 'A-Za-z' <<< "znvygb:me@pouyacode.net"
+   echo "znvygb:me@pouyacode.net" | tr  'N-ZA-Mn-za-m' 'A-Za-z'
+   ```
