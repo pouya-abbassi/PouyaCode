@@ -35,3 +35,9 @@
    tr 'N-ZA-Mn-za-m' 'A-Za-z' <<< "znvygb:me@pouyacode.net"
    echo "znvygb:me@pouyacode.net" | tr  'N-ZA-Mn-za-m' 'A-Za-z'
    ```
+
+** Minify
+  ```
+  go get github.com/tdewolff/minify/cmd/minify
+  ```
+
