@@ -3,9 +3,7 @@ Description: Hall of Fame
 date: 2021-01-08 21:27
 image: jedi-order.png
 icon: fab fa-jedi-order
-Status: hidden
 error: false
-Save_as: jedi-order.html
 
 Kudos to all Jedi Knights who help others grow; People of great importance, who helped me on my journey and all Jedi Knights I mention in my articles.
 

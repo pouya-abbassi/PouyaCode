@@ -3,9 +3,7 @@ Description: In Encryption we trust.
 Date: 2019-12-19 10:42
 image: pgp.jpg
 icon: fas fa-lock
-Status: hidden
 error: false
-Save_as: pgp.html
 
 Here's [my PGP key](/theme/files/pouya.gpg.asc). Keep it close somewhere for more secure connections in future. You can also download it from [keys.openpgp.org](https://keys.openpgp.org/search?q=8CC7EB1535634205E9C2AAD9AF5A5A4AD4FD8797).
 

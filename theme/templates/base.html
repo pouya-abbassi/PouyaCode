@@ -83,7 +83,7 @@
             </a>
             <div class="navbar-dropdown">
           {% for p in pages %}
-              <a class="navbar-item{% if p == pages %} is-active{% endif %}" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+              <a class="navbar-item{% if p == pages %} is-active{% endif %}" href="{{ SITEURL }}/{{ p.url }}"><span class="icon"><i class="{% if p.icon is defined %}{{ p.icon }} {% else %}fas fa-paperclip{% endif %}"></i></span>&nbsp;<span>{{ p.title }}</span></a>
           {% endfor %}
             </div>
           </div>

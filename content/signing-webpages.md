@@ -1,13 +1,14 @@
 Title: Signing WebPages
 Description: Signing HTML documents using PGP.
 Date: 2021-01-09 21:20
+Modified: 2021-01-12 01:55
 category: Security
 tags: computing, technology, encryption, pgp, sameer
 image: signing-webpages.jpg
 icon: fas fa-shield-alt
 
 
-A while ago, I shared [my PGP key](/pgp.html) with you, "for more secure connections in future"; And I'm glad to announce that all `HTML` pages of this website are now signed by my PGP key.
+A while ago, I shared [my PGP key](/pages/pgp.html) with you, "for more secure connections in future"; And I'm glad to announce that all `HTML` pages of this website are now signed by my PGP key.
 
 Of course web-browsers are not built for this, I don't know any web-browser that can verify the signature of a web page; Even if you write a plugin, it should re-download the page for verification, because JavaScript doesn't have access to the whole document, it can only read what's inside `<html>` tag (`document.getElementsByTagName`). But you can always verify the signature manually in commandline:
 
@@ -101,7 +102,7 @@ Hash: SHA512
 Now you're web page is as awesome as mine! Browser gets the `HTML` part, GnuPG gets the signature part, everyone's happy!
 
 ### Talk is cheap, show me the code
-To automate these steps, I wrote a simple bash-script which was super messy! [Sameer](/may-the-source.html) (May the Source be with him) helped me clean up the mess.
+To automate these steps, I wrote a simple bash-script which was super messy! [Sameer](/pages/jedi-order.html) (May the Source be with him) helped me clean up the mess.
 
 Result:
 ```bash

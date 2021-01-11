@@ -39,8 +39,6 @@ SOCIAL = (
         ('Gitlab', 'https://gitlab.com/pouya-abbassi/', 'fab fa-gitlab'),
         ('Goodreads', 'https://www.goodreads.com/pouyacode', 'fab fa-goodreads'),
         ('Email', EMAIL_ROT13, 'fas fa-at'),
-        ('PGP', '/pgp.html', 'fas fa-lock'),
-        ('Jedi Order', '/jedi-order.html', 'fab fa-jedi-order'),
         ('Atom feed', FEED_ALL_ATOM, 'fas fa-rss'),
         )
 
