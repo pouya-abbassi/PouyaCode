@@ -114,7 +114,7 @@ $pre-background: #333333AA
 
 html, body
   scrollbar-width: thin
-  scrollbar-color: #000000 #222222
+  scrollbar-color: #555555 $primary-background
   background: $primary-background
   color: $primary-color
   line-height: 1.2
@@ -251,8 +251,18 @@ a
 blockquote p
   padding: 0
 
+.line
+  background: $secondary-background
+  background-image: linear-gradient(to right, $secondary-background, $primary-color, $secondary-background)
+  height: 1px
+
 hr
   background: $primary-color
+  background-image: linear-gradient(to right, $primary-background, $primary-color, $primary-background)
+  height: 1px
+
+.footer
+  padding: 3rem
 
 .pagination-previous, .pagination-next, .pagination-link
   color: $primary-color
