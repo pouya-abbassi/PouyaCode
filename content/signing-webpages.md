@@ -129,4 +129,5 @@ If you know any way I could improve this code, please contact me via email, I wo
 "But it's already over SSL/TLS! Why do you need to sign it too?" you might say, but sometimes I like to wear my til foil hat and don't put my trust in host providers or CDNs. You know, for Geek's sake!
 
 
+---
 *Image from [Freepik](https://www.freepik.com/free-vector/smart-contract-web-banner_5902294.htm).*

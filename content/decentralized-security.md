@@ -53,4 +53,5 @@ Decentralized systems are here to stay and they're unstoppable, take it from T-8
 > Judgment Day is inevitable.
 
 
+---
 *Image from [Pxfuel](https://www.pxfuel.com/en/free-photo-jrpjv).*
