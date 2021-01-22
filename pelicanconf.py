@@ -9,7 +9,7 @@ AUTHOR = 'Pouya Abbassi'
 SITENAME = 'PouyaCode'
 DESCRIPTION = 'A place for my thoughts.'
 SITEURL = 'http://localhost:8000'
-EMAIL = '<b>m</b>e<span>net</span>&#64;pouya<i>awesome</i>code&#46;net'
+EMAIL = '<b>m</b>e<span>net</span>&#64;pouya<span>awesome</span>code&#46;net'
 EMAIL_ROT13 = 'znvygb:zr@cbhlnpbqr.arg' #ROT13
 FINGERPRINT = '8CC7EB1535634205E9C2AAD9AF5A5A4AD4FD8797'
 

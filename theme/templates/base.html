@@ -6,6 +6,9 @@
   <title>{% if article is defined and article.title is defined %}{{ article.title|title }}{% if article.description is defined %}, {{ article.description }}{% endif %}{% elif page is defined and page.title is defined %}{{ page.title|title }}{% if page.description is defined %}, {{ page.description }}{% endif %}{% else %}{{ SITENAME }}{% endif %}</title>
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bulma.css?v=4">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygment.min.css?v=0">
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/font-awesome.min.css?v=0">
+  </noscript>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/theme/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ SITEURL }}/theme/images/favicon/favicon-32x32.png">
@@ -130,8 +133,8 @@
   </footer>
   <div class="line"></div>
   <script defer
-	  src="{{ SITEURL }}/theme/js/main.min.js?v=3"
-	  integrity="sha512-V4uKHZO9o+rFVkioCoVyAqnLlXbPFRZNf5yfxq3Xh1g+GEwI0o9Wz1V3R4jzLMhdnIEy1qe4ETxABretMM5vuQ=="></script>
+	  src="{{ SITEURL }}/theme/js/main.min.js?v=4"
+	  integrity="sha512-3gSjHHBj1pKSxjz+oAyWZhNPeonfzRvdTucf0tLk8n62zrZBXkeEQ5dbJjEUC6TP7djkC4uWIX4o1hfSClE3AA=="></script>
 {% include "gosquared.html" %}
 {% include "google.html" %}
 </body>

@@ -36,10 +36,13 @@ function imagehide(){
 
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
-        var script = document.createElement('script'),
-            scripts = document.getElementsByTagName('script')[0];
-        script.src = "https://pouyacode.net/theme/js/fa.min.js?v=5.12.0";
-        scripts.parentNode.insertBefore(script, scripts);
+        // Defer loading FontAwesome css
+        var fa = document.createElement('link');
+        fa.rel = 'stylesheet';
+        fa.href = 'http://localhost:8000/theme/css/font-awesome.min.css?v=0';
+        fa.type = 'text/css';
+        var fa_defer = document.getElementsByTagName('link')[0];
+        fa_defer.parentNode.insertBefore(fa, fa_defer);
 
         try {
             // Email obfuscation using ROT13 for navbar.
