@@ -39,7 +39,7 @@ document.onreadystatechange = function () {
         // Defer loading FontAwesome css
         var fa = document.createElement('link');
         fa.rel = 'stylesheet';
-        fa.href = 'http://localhost:8000/theme/css/font-awesome.min.css?v=0';
+        fa.href = 'https://pouyacode.net/theme/css/font-awesome.min.css?v=0';
         fa.type = 'text/css';
         var fa_defer = document.getElementsByTagName('link')[0];
         fa_defer.parentNode.insertBefore(fa, fa_defer);
