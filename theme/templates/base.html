@@ -4,8 +4,8 @@
   {% block head %}
   <meta charset="utf-8" />
   <title>{% if article is defined and article.title is defined %}{{ article.title|title }}{% if article.description is defined %}, {{ article.description }}{% endif %}{% elif page is defined and page.title is defined %}{{ page.title|title }}{% if page.description is defined %}, {{ page.description }}{% endif %}{% else %}{{ SITENAME }}{% endif %}</title>
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bulma.css?v=4">
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygment.min.css?v=0">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/bulma.css?v=4">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygment.min.css?v=0">
   <noscript>
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/font-awesome.min.css?v=0">
   </noscript>
@@ -133,8 +133,9 @@
   </footer>
   <div class="line"></div>
   <script defer
+          type="application/javascript"
 	  src="{{ SITEURL }}/theme/js/main.min.js?v=4"
-	  integrity="sha512-4qAiF40r3stIX7MxIXLVNIlg3ZdqBCq7uLnq8ruqVXqf3/Fy09O+7lpXgvRfkwyra4GNsZFvyMECHJkXpHPQaA=="></script>
+	  integrity="sha512-eSEvv+ml/Hz7tB1Dxymr/Dfi2oJKmntUdFyccA9eW79X4wuQ/BNsjf2eGAk9cDOSMG8/GXKA/+nRbvyCBJNR2w=="></script>
 {% include "gosquared.html" %}
 {% include "google.html" %}
 </body>

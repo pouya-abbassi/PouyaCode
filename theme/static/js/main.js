@@ -39,8 +39,8 @@ document.onreadystatechange = function () {
         // Defer loading FontAwesome css
         var fa = document.createElement('link');
         fa.rel = 'stylesheet';
-        fa.href = '/theme/css/font-awesome.min.css?v=0';
         fa.type = 'text/css';
+        fa.href = '/theme/css/font-awesome.min.css?v=0';
         var fa_defer = document.getElementsByTagName('link')[0];
         fa_defer.parentNode.insertBefore(fa, fa_defer);
 
