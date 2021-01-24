@@ -34,6 +34,11 @@ function imagehide(){
 }
 
 
+document.getElementById('show').addEventListener("click", imageshow);
+document.getElementById('hide').addEventListener("click", imagehide);
+document.getElementById('modalx').addEventListener("click", imagehide);
+
+
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
         // Defer loading FontAwesome css
