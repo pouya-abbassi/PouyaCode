@@ -34,10 +34,6 @@ function imagehide(){
 }
 
 
-document.getElementById('show').addEventListener("click", imageshow);
-document.getElementById('hide').addEventListener("click", imagehide);
-document.getElementById('modalx').addEventListener("click", imagehide);
-
 
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
@@ -48,6 +44,13 @@ document.onreadystatechange = function () {
         fa.href = '/theme/css/font-awesome.min.css?v=0';
         var fa_defer = document.getElementsByTagName('link')[0];
         fa_defer.parentNode.insertBefore(fa, fa_defer);
+
+        try{
+            // Set event for show/hide modal image on article page.
+            document.getElementById('show').addEventListener("click", imageshow);
+            document.getElementById('hide').addEventListener("click", imagehide);
+            document.getElementById('modalx').addEventListener("click", imagehide);
+        }catch(_){}
 
         try {
             // Email obfuscation using ROT13 for navbar.
