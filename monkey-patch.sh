@@ -10,3 +10,4 @@ find public -name '*.html' -exec sh -c '
 
 
 cp static/* public/
+cp public/404.html public/404.shtml
