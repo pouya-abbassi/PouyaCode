@@ -16,6 +16,7 @@
   <link rel="icon" type="image/svg+xml" href="{{ SITEURL }}/theme/images/favicon/favicon.svg">
   <link rel="manifest" href="{{ SITEURL }}/theme/images/favicon/site.webmanifest?0">
   <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}">
+  <link rel="author" href="{{ SITEURL}}/humans.txt">
   <meta name="description" content="{% if article is defined and article.summary is defined %}{{ article.summary|striptags|replace('"', "'") }}{% elif page is defined and page.summary is defined %}{{ page.summary|striptags|replace('"', "'") }}{% else %}{{ DESCRIPTION }}{% endif %}">
   <meta name="author" content="{{ AUTHOR }}">
   <meta name="generator" content="Pelican {{ PELICAN_VERSION }}">
