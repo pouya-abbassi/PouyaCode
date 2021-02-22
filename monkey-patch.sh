@@ -7,3 +7,6 @@ find public -name '*.html' -exec sh -c '
     mv "${1%}.asc" "${1%}";
     sed -i -e "1i <!--" -e "$ a -->" "${1%}";
   ' sh {} \;
+
+
+cp static/* public/

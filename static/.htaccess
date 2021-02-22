@@ -1,0 +1,28 @@
+<ifModule mod_headers.c>
+
+  Header set Strict-Transport-Security "max-age=10886400; includeSubDomains; preload"
+  # 1 Day for html, xml and txt
+  <filesMatch ".(html|htm|shtml|xml|txt)$">
+  Header set Cache-Control "max-age=86400, public, must-revalidate"
+  </filesMatch>
+
+  # 1 Month for most static assets
+  <filesMatch ".(css|js|svg|jpg|jpeg|png|gif|ico)$">
+  Header set Cache-Control "max-age=2592000, public"
+  </filesMatch>
+
+  # 1 Year for fonts
+  <filesMatch ".(woff|woff2|ttf|otf|eot)$">
+  Header set Cache-Control "max-age=31104000, public"
+  </filesMatch>
+</ifModule>
+
+ServerSignature Off
+
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,NE,R=301]
+
+Header set Content-Security-Policy "default-src 'self' https:; style-src 'self' 'unsafe-inline' https:;"

@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /author/
+Disallow: /category/
+Disallow: /tag/
+Disallow: /authors.html
+Disallow: /categories.html
+Disallow: /tags.html
+
+Sitemap: https://pouyacode.net/sitemap.xml

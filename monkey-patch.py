@@ -10,20 +10,6 @@ from publishconf import *
 from subprocess import call
 
 
-def create():
-    """Creates some files like `robots.txt` and `.htaccess`.
-    Also makes a copy of `404.html` into `404.shtml` for Apache."""
-    with open('public/robots.txt', 'w') as robots:
-        robots.write('User-agent: *\nAllow: /\n\nSitemap: https://pouyacode.net/sitemap.xml')
-        robots.close()
-
-    with open('public/.htaccess', 'w') as htaccess:
-        htaccess.write('<ifModule mod_headers.c>\n\n  Header set Strict-Transport-Security "max-age=10886400; includeSubDomains; preload"\n  # 1 Day for html, xml and txt\n  <filesMatch ".(html|htm|shtml|xml|txt)$">\n  Header set Cache-Control "max-age=86400, public, must-revalidate"\n  </filesMatch>\n\n  # 1 Month for most static assets\n  <filesMatch ".(css|js|svg|jpg|jpeg|png|gif|ico)$">\n  Header set Cache-Control "max-age=2592000, public"\n  </filesMatch>\n\n  # 1 Year for fonts\n  <filesMatch ".(woff|woff2|ttf|otf|eot)$">\n  Header set Cache-Control "max-age=31104000, public"\n  </filesMatch>\n</ifModule>\n\nServerSignature Off\n\nRewriteEngine On\nRewriteCond %{HTTPS} off [OR]\nRewriteCond %{HTTP_HOST} ^www\. [NC]\nRewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]\nRewriteRule ^ https://%1%{REQUEST_URI} [L,NE,R=301]\n\nHeader set Content-Security-Policy "default-src \'self\' https:; style-src \'self\' \'unsafe-inline\' https:;"')
-        htaccess.close()
-
-    copyfile('public/404.html', 'public/404.shtml')
-
-
 def modify_url():
     """Adds `rel=nofollow` and `target=_blank` to external urls, mostly used inside blog posts."""
     files = create_list()
