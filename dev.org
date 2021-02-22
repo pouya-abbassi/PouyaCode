@@ -1,5 +1,3 @@
-[PouyaCode](https://pouyacode.net) built using [Pelican](https://blog.getpelican.com) & [Bulma](https://bulma.io).
-
 * Notes to myself
 ** Run:
    - Dev:
@@ -40,4 +38,3 @@
   ```
   go get github.com/tdewolff/minify/cmd/minify
   ```
-
