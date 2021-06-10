@@ -27,12 +27,13 @@
   <meta property="og:url" content="{{ SITEURL }}{% if article is defined and article.url is defined %}/{{ article.url }}{% elif page is defined and page.url is defined %}/{{ page.save_as }}{% endif %}">
   <meta property="og:image" content="{{ SITEURL }}{% if article is defined and article.image is defined %}/theme/images/articles/{{ article.image }}{% elif page is defined and page.image is defined %}/theme/images/pages/{{ page.image }}{% else %}/theme/images/avatar-original.png{% endif %}">
   <meta property="og:site_name" content="{{ SITENAME }}">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@pouyaabbassi">
-  <meta name="twitter:title" content="{% if article is defined and article.title is defined %}{{ article.title|title }}{% if article.description is defined %}, {{ article.description }}{% endif %}{% elif page is defined and page.title is defined %}{{ page.title }}{% if page.description is defined %}, {{ page.description }}{% endif %}{% else %}{{ SITENAME }}{% endif %}">
-  <meta name="twitter:description" content="{% if article is defined and article.summary is defined %}{{ article.summary|striptags|replace('"', "'") }}{% elif page is defined and page.summary is defined %}{{ page.summary|striptags|replace('"', "'") }}{% else %}{{ DESCRIPTION }}{% endif %}">
-  <meta name="twitter:image" content="{{ SITEURL }}{% if article is defined and article.image is defined %}/theme/images/articles/{{ article.image }}{% elif page is defined and page.image is defined %}/theme/images/pages/{{ page.image }}{% else %}/theme/images/avatar-original.png{% endif %}">
-  <meta name="twitter:image:alt" content="{% if article is defined and article.title is defined %}{{ article.title }}{% elif page is defined and page.title is defined %}{{ page.title }}{% else %}{{ DESCRIPTION }}{% endif %}">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="@pouyaabbassi">
+  <meta property="twitter:title" content="{% if article is defined and article.title is defined %}{{ article.title|title }}{% if article.description is defined %}, {{ article.description }}{% endif %}{% elif page is defined and page.title is defined %}{{ page.title }}{% if page.description is defined %}, {{ page.description }}{% endif %}{% else %}{{ SITENAME }}{% endif %}">
+  <meta property="twitter:description" content="{% if article is defined and article.summary is defined %}{{ article.summary|striptags|replace('"', "'") }}{% elif page is defined and page.summary is defined %}{{ page.summary|striptags|replace('"', "'") }}{% else %}{{ DESCRIPTION }}{% endif %}">
+  <meta property="twitter:url" content="{{ SITEURL }}{% if article is defined and article.url is defined %}/{{ article.url }}{% elif page is defined and page.url is defined %}/{{ page.save_as }}{% endif %}">
+  <meta property="twitter:image" content="{{ SITEURL }}{% if article is defined and article.image is defined %}/theme/images/articles/{{ article.image }}{% elif page is defined and page.image is defined %}/theme/images/pages/{{ page.image }}{% else %}/theme/images/avatar-original.png{% endif %}">
+  <meta property="twitter:image:alt" content="{% if article is defined and article.title is defined %}{{ article.title }}{% elif page is defined and page.title is defined %}{{ page.title }}{% else %}{{ DESCRIPTION }}{% endif %}">
   {% if FEED_ALL_ATOM %}
   <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
   {% endif %}
