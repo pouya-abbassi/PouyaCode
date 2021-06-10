@@ -90,6 +90,5 @@ def optimize(dirpath, filename):
 
 
 if __name__ == '__main__':
-    create()
     modify_url()
     modify_img()
