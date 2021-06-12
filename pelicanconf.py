@@ -39,7 +39,7 @@ SOCIAL = (
         ('Gitlab', 'https://gitlab.com/pouya-abbassi/', 'fab fa-gitlab'),
         ('Goodreads', 'https://www.goodreads.com/pouyacode', 'fab fa-goodreads'),
         ('Email', EMAIL_ROT13, 'fas fa-at'),
-        ('Atom feed', FEED_ALL_ATOM, 'fas fa-rss'),
+        ('Atom feed', '/' + FEED_ALL_ATOM, 'fas fa-rss'),
         )
 
 DEFAULT_PAGINATION = 10
