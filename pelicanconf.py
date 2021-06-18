@@ -30,13 +30,12 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 BLOGROLL = (
-        ('lxSameer', 'https://lxsameer.com'),
-        ('Yottanami', 'http://blog.yottanami.com/'),
+        ('nil', 'https://nothing-yet.invalid'),
         )
 
 # Social widget
 SOCIAL = (
-        ('Gitlab', 'https://gitlab.com/pouya-abbassi/', 'fab fa-gitlab'),
+        ('GitHub', 'https://github.com/pouya-abbassi/', 'fab fa-github'),
         ('Goodreads', 'https://www.goodreads.com/pouyacode', 'fab fa-goodreads'),
         ('Email', EMAIL_ROT13, 'fas fa-at'),
         ('Atom feed', '/' + FEED_ALL_ATOM, 'fas fa-rss'),
