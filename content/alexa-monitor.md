@@ -29,7 +29,10 @@ Whenever I find something that's not too difficult to fix (or implement) I'll cr
 
 Also I'll try to keep everything well written and well documented, so it'd be easy to read and understand. But if something wasn't clear enough, you can just ask me (or someone else in the community) to explain it in more detail and probably refactor the code to make it more readable for humans.
 
-We write code for people, computers can catch up! (I remember reading a quote similar to this, but I don't remember the source. Send me an email if you know.)
+> Programs must be written for people to read, and only incidentally for machines to execute.
+> — Harold Abelson; Structure and Interpretation of Computer Programs
+
+We write code for people, computers can catch up!
 
 The goal is to learn and to teach, so well documented contributions are most welcome.
 
