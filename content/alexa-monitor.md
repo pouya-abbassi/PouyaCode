@@ -1,9 +1,9 @@
 Title: Alexa Monitor
 Description: A beginner friendly Clojure app
 Date: 2021-06-17 18:55:14
-Modified: 2021-06-24 00:33:22
+Modified: 2021-06-27 10:05:34
 category: Programming
-tags: clojure
+tags: clojure, beginner-friendly
 icon: fas fa-spider
 image: alexa-monitor.jpg
 
@@ -43,9 +43,12 @@ Before writing a new feature or fixing any issue, please first discuss with othe
 ### URLs
 The project is hosted on [GitHub](https://github.com/pouyacode/alexa-monitor).
 
+Documents available [here](https://alexa-monitor.pouyacode.net).
+
 Discussions take place at [Gitter](https://gitter.im/pouyacode/alexa-monitor).
 
+Next article in this series: [Alexa Monitor Documents]({filename}/alexa-monitor-documents.md).
 
 ---
 
-*Image by myself, using Blender.*
+*Image by myself, using Blender; You can also [download the 3D model](https://mega.nz/folder/dcs2FR7K#3_N28U-vC7dLa9vF90kaxA).*

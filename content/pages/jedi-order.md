@@ -13,6 +13,7 @@ As every other part of my website, this page is work in progress and I hope it a
 | Name                       | Website                              |
 |----------------------------|--------------------------------------|
 | [Sameer](/tag/sameer.html) | [lxsameer.com](https://lxsameer.com) |
+| [Donald E. Knuth](/tag/knuth.html) | [stanford.edu](https://cs.stanford.edu/~knuth/) |
 
 May the Source be with us all.
 
