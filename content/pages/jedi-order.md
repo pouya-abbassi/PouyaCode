@@ -10,10 +10,13 @@ Kudos to all Jedi Knights who help others grow; People of great importance, who 
 
 As every other part of my website, this page is work in progress and I hope it always remains so.
 
-| Name                       | Website                              |
-|----------------------------|--------------------------------------|
-| [Sameer](/tag/sameer.html) | [lxsameer.com](https://lxsameer.com) |
-| [Donald E. Knuth](/tag/knuth.html) | [stanford.edu](https://cs.stanford.edu/~knuth/) |
+| Name                                             | Website                                                                                                            |
+|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| [Sameer](/tag/sameer.html)                       | [lxsameer.com](https://lxsameer.com)                                                                               |
+| [Donald E. Knuth](/tag/knuth.html)               | [stanford.edu](https://cs.stanford.edu/~knuth/)                                                                    |
+| [Dennis MacAlistair Ritchie](/tags/ritchie.html) | [bell-labs.com](https://www.bell-labs.com/usr/dmr/www/)                                                            |
+| [John McCarthy](/tags/mccarthy.html)             | [standford.edu](http://www-formal.stanford.edu/jmc/)                                                               |
+| [Steve Russell](/tags/russell.html)              | [wikipedia.org](https://en.wikipedia.org/wiki/Steve_Russell_(computer_scientist)) (does anyone know his homepage?) |
 
 May the Source be with us all.
 
