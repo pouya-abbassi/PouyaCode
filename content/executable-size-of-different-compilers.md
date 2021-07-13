@@ -1,6 +1,6 @@
 Title: Executable size of different compilers
 Description: A comparison of different programming languages' output
-Date: 2021-07-18 20:01:55
+Date: 2021-07-13 10:07:45
 category: Programming
 tags: technology, computing, languages, ritchie, mccarthy, russell
 icon: far fa-save
@@ -19,12 +19,13 @@ I made this content because I think we need some reference for future articles o
 ### System configuration
 * OS: Debian Sid
 * Architecture: x86_64
-* GCC: 10.2.1
-* C++: 10.2.1
+* gcc: 10.2.1
+* g++: 10.2.1
 * glibc: 2.31-12
 * rustc: 1.53.0
 * go: go1.15.9
-* SBCL: 2.1.1
+* sbcl: 2.1.1
+* ccl: 1.12
 
 My original plan was to write more complex programs, but that would introduce complexity and right now, all I need is a simple comparison for different languages and their compilers. I might add more projects for each language in the future.
 
@@ -179,18 +180,24 @@ Designed as just a theory, not practice; It was never intended to solve any prob
 
 Maybe if computers were designed based on [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus) rather than Turing Machine, Common Lisp would be their de facto standard programming language everywhere and we'd be living in a world with far more advanced technologies.
 
-But right now, it gives us the worst result for this particular "executable size" test.
+But right now, it gives us the worst result for this particular "executable size" test. It's partially SBCL's fault, but we'll discuss this on later articles, in more depth.
 
 Although the resulting binary is already huge, I don't know how to compile it with static linking.
 ```clojure
 (defun main ()
   (format t "Hello, World!~%"))
 ```
-Compile Options:
+Compile using SBCL:
 ```bash
 sbcl --load hello.lisp --eval "(sb-ext:save-lisp-and-die \"hello\" :toplevel #'main :executable t)"
 ```
 Binary size: `38739616 Bytes`
+
+Compile using CCL:
+```bash
+ccl --load hello.lisp --eval "(save-application \"hello\" :toplevel-function #'main :prepend-kernel t)"
+```
+Binary size: `27214064 Bytes`
 
 
 ## Conclusion
@@ -204,9 +211,14 @@ Binary size: `38739616 Bytes`
 | Go                             | 2034781        |                 |
 | Go (without DWARF and striped) | 1396736        |                 |
 | Common LISP, SBCL              |                | 38739616        |
+| Common Lisp, CCL               |                | 27214064        |
 
 As I expected, C yields the smallest binary size, mostly because the compiler trusts us, programmers, to handle run-time check and memory management and tries to stay out of our way and just translates our code (almost) straight to assembly.
 
 C++ on the other hand, if used with its native libraries, adds some run-time tests and other features to our program, so it's a bit bulkier on the executable size aspect.
 
 Rust is the heaviest of them all (between these competitors), even if you link the libraries dynamically. That's probably because of its "Lifetime feature" which is very handy, at least on paper. In my experiment, it gets in the way and is a bit annoying.
+
+Go isn't a system programming language, I don't expect to get small binary output.
+
+Same thing for SBCL and CCL, which are not built for low level system programming. Stay tuned, we'll discuss Common Lisp in more detail in the future.
