@@ -284,4 +284,4 @@ Again. Let me rephrase that:
 
 
 ---
-*Image by myself, using Blender
+*Image by myself, using Blender.*
