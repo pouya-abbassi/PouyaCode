@@ -14,9 +14,17 @@ Here I'd like to write some very simple projects in different Languages, and see
 
 Here we only examine compilers that produce *native code*, not the ones with *bytecode* output.
 
-This article is not original. I saw the same written by Artem on dev.to website, but his post is somehow removed and it's now a 404 page and I couldn't contact him to ask for the fix. (You can still see his work on [Wayback Machine](https://web.archive.org/web/20210508020101/https://dev.to/aakatev/executable-size-rust-go-c-and-c-1bna))
+This article is not original. I saw the something similar written by Artem on dev.to website, but his post is somehow removed and it's now a 404 page and I couldn't contact him to ask for the fix. (You can still see his work on [Wayback Machine](https://web.archive.org/web/20210508020101/https://dev.to/aakatev/executable-size-rust-go-c-and-c-1bna))
 
-I made this content because I think we need some reference for future articles on PouyaCode.net.
+I made this content because I think we need some reference for future articles on my website; Bear in mind that this is *not* an actual competition. I'm not using optimization flags (like `-Os` for gcc and clang) when not needed, and also I'm not going to `strip` the output of these compilers.
+
+This is just a showcase on how much stuff are automatically packed inside our executable program.
+
+My original plan was to write more complex codes, but maybe for now we can just compare simple codes that only do one simple thing. I might add more projects for each language in the future.
+
+Every programmer starts their carrier with the good old `hello world` program. So let's dig in!
+
+All source codes, plus a `makefile` is available on [my github account](https://github.com/pouya-abbassi/executable-size).
 
 
 ### System configuration
@@ -29,12 +37,6 @@ I made this content because I think we need some reference for future articles o
 * go: go1.15.9
 * sbcl: 2.1.1
 * ccl: 1.12
-
-My original plan was to write more complex programs, but that would introduce complexity and right now, all I need is a simple comparison for different languages and their compilers. I might add more projects for each language in the future.
-
-All source codes, plus a `makefile` is available on [my github account](https://github.com/pouya-abbassi/executable-size).
-
-Every programmer starts their carrier with the good old `hello world` program. So let's dig in.
 
 
 ### C - GCC
@@ -191,12 +193,15 @@ rustc -C opt-level=s -C target-feature=+crt-static hello.rs
 ```
 Binary size: `4774864 Bytes`
 
+Weird! It's almost as if it didn't optimize anything!
+
 Also we can ask `rustc` to make it more dynamic than default. So dynamic + size optimization:
 ```bash
 rustc -C opt-level=s -C prefer-dynamic -C target-feature=-crt-static hello.rs
 ```
 Binary size: `17272 Bytes`
 
+Now, that's more like it!
 
 ## GO
 Google's Go Lang was not initially designed with performance in mind, but mostly just to get things done. But as a fast and powerful compiled programming language, I think it deserves to be here.
@@ -247,6 +252,10 @@ Compile using CCL:
 ccl --load hello.lisp --eval "(save-application \"hello\" :toplevel-function #'main :prepend-kernel t)"
 ```
 Binary size: `27214064 Bytes`
+
+What kind of horsepower could possibly be inside that `Hello, World!` program to make it this big?
+
+If you know LISP, you know the answer; If not, stay tuned for future articles on Common Lisp. It needs its own set of articles to discuss LISP's ideology. But for now, all I can say is that this `Hello, World!` program worth every bit of disk space it takes.
 
 
 ## Conclusion
