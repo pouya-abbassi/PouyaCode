@@ -16,15 +16,23 @@ Here we only examine compilers that produce *native code*, not the ones with *by
 
 This article is not original. I saw the something similar written by Artem on dev.to website, but his post is somehow removed and it's now a 404 page and I couldn't contact him to ask for the fix. (You can still see his work on [Wayback Machine](https://web.archive.org/web/20210508020101/https://dev.to/aakatev/executable-size-rust-go-c-and-c-1bna))
 
+
+## Objectives
+The main goal of this article is to compare of some **Native Code Compilers** that each are designed with different mindset and different goal; **Byte Code Compilers**, because of their nature, are not included in this test.
+
 I made this content because I think we need some reference for future articles on my website; Bear in mind that this is *not* an actual competition. I'm not using optimization flags (like `-Os` for gcc and clang) when not needed, and also I'm not going to `strip` the output of these compilers.
 
 This is just a showcase on how much stuff are automatically packed inside our executable program.
 
-My original plan was to write more complex codes, but maybe for now we can just compare simple codes that only do one simple thing. I might add more projects for each language in the future.
+My original plan was to write more complex codes, but I chose `Hello, World!` program, because at its core, it's just a few simple CPU Instructions to create a simple `OS Call` and hand over few bytes of data to OS. So nothing fancy!
 
-Every programmer starts their carrier with the good old `hello world` program. So let's dig in!
+This way, all we measure is "how much data, a compiler puts inside the executable output without being asked".
+
+Also every programmer starts their carrier with the good old `hello world` program!
 
 All source codes, plus a `makefile` is available on [my github account](https://github.com/pouya-abbassi/executable-size).
+
+So let's dig in!
 
 
 ### System configuration
@@ -38,6 +46,7 @@ All source codes, plus a `makefile` is available on [my github account](https://
 * sbcl: 2.1.1
 * ccl: 1.12
 
+---
 
 ### C - GCC
 A de facto standard of kernel development, with simple design and zero unnecessary features. C must be winner here.
@@ -257,6 +266,7 @@ What kind of horsepower could possibly be inside that `Hello, World!` program to
 
 If you know LISP, you know the answer; If not, stay tuned for future articles on Common Lisp. It needs its own set of articles to discuss LISP's ideology. But for now, all I can say is that this `Hello, World!` program worth every bit of disk space it takes.
 
+---
 
 ## Conclusion
 | Language                       | Static (Bytes) | Dynamic (Bytes) |
@@ -266,7 +276,7 @@ If you know LISP, you know the answer; If not, stay tuned for future articles on
 | C++                            | 2199656        | 17248           |
 | C++ (with stdio)               | 782776         | 16616           |
 | Clang++                        | 2236584        | 17072           |
-| clang++ (with stdio)           | 786944         | 16504           |
+| Clang++ (with stdio)           | 786944         | 16504           |
 | Rust                           | 4775696        | 3259488         |
 | Rust (size optimization)       | 4774864        | 17272           |
 | Go                             | 2034781        |                 |
