@@ -1,7 +1,7 @@
 Title: Executable size of different compilers
 Description: A comparison of different programming languages' output
 Date: 2021-07-13 10:07:45
-Modified: 2021-07-14 23:40:23
+Modified: 2021-07-18 12:40:14
 category: Programming
 tags: technology, computing, languages, ritchie, mccarthy, russell
 icon: far fa-save
