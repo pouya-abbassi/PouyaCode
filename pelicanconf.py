@@ -3,7 +3,7 @@
 
 from __future__ import unicode_literals
 from jsmin import jsmin
-import sass, os
+import os
 
 AUTHOR = 'Pouya Abbassi'
 SITENAME = 'PouyaCode'
@@ -51,12 +51,6 @@ THEME = 'theme'
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS      = ['readtime', 'share_post', 'neighbors']
-
-# Sass compile
-with open(THEME + '/static/css/bulma.css', 'w') as css:
-    style = sass.compile(filename=('sass/bulma.sass'), output_style='compressed')
-    css.write(style)
-    css.close()
 
 # JS minifier
 with open('theme/static/js/main.js') as js_file:
