@@ -73,8 +73,6 @@ publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	$(PY) $(BASEDIR)/monkey-patch.py
 	sh $(BASEDIR)/monkey-patch.sh
-	purifycss $(OUTPUTDIR)/*.html $(OUTPUTDIR)/*/*.html $(OUTPUTDIR)/theme/css/bulma.css -mo $(OUTPUTDIR)/theme/css/bulma.css
-	purifycss $(OUTPUTDIR)/*.html $(OUTPUTDIR)/*/*.html $(OUTPUTDIR)/theme/css/font-awesome.min.css -mo $(OUTPUTDIR)/theme/css/font-awesome.min.css
 
 
 .PHONY: html help clean regenerate serve serve-global devserver publish 
