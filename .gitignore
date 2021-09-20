@@ -1,6 +1,8 @@
 __pycache__
 *.pyc
 .sass-cache
+theme/static/css/style.css
+theme/static/css/style.css.map
 theme/static/js/main.min.js
 output
 public

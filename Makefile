@@ -70,7 +70,7 @@ else
 endif
 
 publish:
-	sass -s compressed sass/style.sass:output/theme/css/style.css
+	sass -s compressed sass/style.sass:theme/static/css/style.css
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	$(PY) $(BASEDIR)/monkey-patch.py
 	sh $(BASEDIR)/monkey-patch.sh
