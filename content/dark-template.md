@@ -1,6 +1,6 @@
-Title: Dark Template
-Description: How to do it and what to avoid.
-Date: 2021-06-12 05:33:40
+title: Dark Template
+description: How to do it and what to avoid.
+date: 2021-06-12 05:33:40
 category: Design
 tags: design, ui/ux, appearance
 image: dark-template.jpg

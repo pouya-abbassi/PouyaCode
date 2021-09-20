@@ -1,7 +1,6 @@
 __pycache__
 *.pyc
 .sass-cache
-theme/static/css/bulma.css
 theme/static/js/main.min.js
 output
 public

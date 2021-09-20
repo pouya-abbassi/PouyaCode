@@ -1,7 +1,7 @@
-Title: PGP
-Description: In Encryption we trust.
-Date: 2019-12-19 10:42
-Modified: 2021-01-12 01:55
+title: PGP
+description: In Encryption we trust.
+date: 2019-12-19 10:42
+modified: 2021-01-12 01:55
 image: pgp.jpg
 icon: fas fa-lock
 error: false

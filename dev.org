@@ -12,7 +12,7 @@
 
    - Sass:
    ```
-   sass -t compress --watch sass/bulma.sass:output/theme/css/bulma.css
+   sass -s compressed -w sass/style.sass:output/theme/css/style.css
    ```
 
 

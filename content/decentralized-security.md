@@ -1,7 +1,7 @@
-Title: Decentralized Security
-Description: Why I Love PGP.
-Date: 2021-01-07 09:53
-Modified: 2021-01-12 01:55
+title: Decentralized Security
+description: Why I Love PGP.
+date: 2021-01-07 09:53
+modified: 2021-01-12 01:55
 category: Security
 tags: computing, technology, encryption, pgp
 image: decentralized-security.jpg

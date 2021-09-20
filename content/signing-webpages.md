@@ -1,7 +1,7 @@
-Title: Signing WebPages
-Description: Signing HTML documents using PGP.
-Date: 2021-01-09 21:20
-Modified: 2021-01-12 02:10
+title: Signing WebPages
+description: Signing HTML documents using PGP.
+date: 2021-01-09 21:20
+modified: 2021-01-12 02:10
 category: Security
 tags: computing, technology, encryption, pgp, sameer
 image: signing-webpages.jpg

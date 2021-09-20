@@ -34,7 +34,6 @@ function imagehide(){
 }
 
 
-
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
         // Defer loading FontAwesome css

@@ -1,0 +1,775 @@
+@charset "utf-8"
+
+@font-face
+  font-family: 'Roboto'
+  font-style: normal
+  font-weight: 400
+  src: local('Roboto')
+  src: local('Roboto-Regular')
+  src: url(/theme/fonts/Roboto/Roboto-Regular.woff2) format('woff2')
+  font-display: fallback
+
+@font-face
+  font-family: 'Roboto'
+  font-style: italic
+  font-weight: 400
+  src: local('Roboto Italic')
+  src: local('Roboto-Italic')
+  src: url(/theme/fonts/Roboto/Roboto-Italic.woff2) format('woff2')
+  font-display: fallback
+
+@font-face
+  font-family: 'Roboto'
+  font-style: normal
+  font-weight: 700
+  src: local('Roboto Bold')
+  src: local('Roboto-Bold')
+  src: url(/theme/fonts/Roboto/Roboto-Bold.woff2) format('woff2')
+  font-display: fallback
+
+@font-face
+  font-family: 'Quicksand'
+  font-style: normal
+  font-weight: 500
+  src: local('Quicksand Medium')
+  src: local('Quicksand-Medium')
+  src: url(/theme/fonts/Quicksand/Quicksand-Medium.woff2) format('woff2')
+  font-display: fallback
+
+@font-face
+  font-family: 'Quicksand'
+  font-style: normal
+  font-weight: 300
+  src: local('Quicksand Light')
+  src: local('Quicksand-Light')
+  src: url(/theme/fonts/Quicksand/Quicksand-Light.woff2) format('woff2')
+  font-display: fallback
+
+@font-face
+  font-family: 'Ubuntu Mono'
+  font-style: normal
+  font-weight: 400
+  src: local('Ubuntu Mono')
+  src: local('UbuntuMono-Regular')
+  src: url(/theme/fonts/Ubuntu_Mono/UbuntuMono-Regular.woff2) format('woff2')
+  font-display: fallback
+
+@font-face
+  font-family: 'Ubuntu Mono'
+  font-style: normal
+  font-weight: 700
+  src: local('Ubuntu Mono Bold')
+  src: local('UbuntuMono-Bold')
+  src: url(/theme/fonts/Ubuntu_Mono/UbuntuMono-Bold.woff2) format('woff2')
+  font-display: fallback
+
+$sans-serif: 'Roboto', Arial, Helvetica, sans-serif
+$serif: 'Quicksand', Times, serif
+$mono: 'ubuntu mono', hack
+
+$pri-back: #222
+$pri-color: #DED
+$sec-back: #333
+$sec-color: #EFE
+
+$transparent-box: #DED3
+
+html, body
+  scrollbar-width: thin
+  scrollbar-color: #555 $pri-back
+  background: $pri-back
+  color: $pri-color
+  line-height: 1.2
+  margin: 0
+  font-family: $sans-serif
+
+p
+  margin: 0
+  padding: 0
+
+container
+  max-width: 1344px
+  margin: auto
+
+nav
+  background: $sec-back
+  color: $sec-color
+  align-items: stretch
+  display: flex
+  min-height: 3.25rem
+
+img
+  height: auto
+  max-width: 100%
+
+code
+  font-family: $mono
+  background: $sec-back
+  color: #aea
+  font-size: .875em
+  font-weight: normal
+  padding: 0.25em 0.5em 0.25em
+
+.navbar-item
+  align-items: center
+  display: flex
+  padding: .5rem .75rem
+  position: relative
+  min-height: 3rem
+  cursor: pointer
+  &:hover
+    .navbar-dropdown
+      display: block
+  img
+    width: 112px
+    height: 24px
+
+a.navbar-item, a.navbar-link
+  line-height: 1.5
+  display: flex
+  padding: .5rem .75rem
+  &:hover
+    text-decoration: none
+    background: $pri-back
+
+a.navbar-link
+    padding-right: 1.5rem
+
+.navbar-item.has-dropdown
+  align-items: stretch
+
+.navbar-link
+  align-items: center
+  display: flex
+  &:after
+    content: ""
+    border: 3px solid rgba(0,0,0,0)
+    border-radius: 2px
+    border-right: 0
+    border-top: 0
+    height: .625em
+    margin-top: -.4375em
+    position: absolute
+    top: 50%
+    transform: rotate(-45deg)
+    transform-origin: center
+    width: .625em
+    border-color: $sec-color
+    margin-top: -.375em
+    right: 1.125em
+    box-sizing: border-box
+  &:hover
+    text-decoration: none
+
+.navbar-dropdown
+  display: none
+  background-color: $sec-back
+  border-bottom-left-radius: 6px
+  border-bottom-right-radius: 6px
+  border-top: 2px solid $pri-color
+  box-shadow: 0 8px 8px rgba(10,10,10,0.1)
+  font-size: .875rem
+  left: 0
+  min-width: 100%
+  position: absolute
+  top: 100%
+  z-index: 20
+  padding-bottom: .5rem
+  padding-top: .5rem
+  .navbar-item
+    padding-left: 1.5rem
+    padding-right: 3rem
+    min-height: auto
+    white-space: nowrap
+
+.navbar .container
+  align-items: stretch
+  display: flex
+  min-height: 3.25rem
+  width: 100%
+
+.navbar-brand
+  margin-left: -.75rem
+  align-items: stretch
+  display: flex
+  flex-shrink: 0
+  min-height: 3.25rem
+
+.navbar-menu
+  flex-grow: 1
+  flex-shrink: 0
+  align-items: stretch
+  display: flex
+
+.navbar-menu.is-active
+    display: block
+
+.navbar-start, .navbar-end
+  align-items: stretch
+  display: flex
+
+.navbar-start
+  justify-content: flex-start
+  margin-right: auto
+
+.navbar-end
+  justify-content: flex-end
+  margin-left: auto
+
+.hero
+  align-items: stretch
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.hero-body
+  padding: 3rem
+  flex-grow: 1
+  flex-shrink: 0
+
+.section
+  padding: 3rem 1.5rem
+
+pre, pre code, p.code
+  font-family: $mono
+  background: transparent
+
+.avatar
+  margin: inherit
+  border: 3px solid $sec-back
+  border-radius: 50%
+
+.icon
+  align-items: center
+  display: inline-flex
+  justify-content: center
+  height: 1.5rem
+  width: 1.5rem
+
+.icon.is-large
+  height: 3rem
+  width: 3rem
+
+.is-128x128
+  width: 128px
+  height: 128px
+
+.column
+  padding: .75rem
+
+.column.is-three-fifths
+  margin: auto
+
+a.navbar-item
+  text-decoration: none
+
+a.article-title
+  color: $sec-color
+  &:hover
+    color: $pri-color
+    text-decoration: .1rem underline
+
+.navbar-burger
+  color: $sec-color
+  cursor: pointer
+  display: none
+  height: 3.25rem
+  position: relative
+  width: 3.25rem
+  margin-left: auto
+  -moz-appearance: none
+  -webkit-appearance: none
+  appearance: none
+  background: none
+  border: none
+  color: currentColor
+  font-family: inherit
+  font-size: 1em
+  margin: 0
+  padding: 0
+  margin-left: auto
+  &:hover
+    background: $pri-back
+  span
+    background-color: currentColor
+    display: block
+    height: 1px
+    left: calc(50% - 8px)
+    position: absolute
+    transform-origin: center
+    transition-duration: 86ms
+    transition-property: background-color, opacity, transform
+    transition-timing-function: ease-out
+    width: 16px
+    &:nth-child(1)
+      top: calc(50% - 6px)
+    &:nth-child(2)
+      top: calc(50% - 1px)
+    &:nth-child(3)
+      top: calc(50% + 4px)
+
+.navbar-burger.is-active
+  span
+    &:nth-child(1)
+      transform: translateY(5px) rotate(45deg)
+    &:nth-child(2)
+      transform: scaleX(0)
+    &:nth-child(3)
+      transform: translateY(-5px) rotate(-45deg)
+
+article.content
+  padding: 1rem
+  border: 1px solid $pri-back
+  border-radius: 1rem
+  &:hover
+    border: 1px solid $sec-back
+    background: $sec-back
+    box-shadow: inset 0 0 3rem 2rem $pri-back
+
+.content
+  h1, h2, h3,h4, h5, h6
+    margin-bottom: .5em
+  :not(:first-child)
+    margin-top: 1em
+  p
+    margin-bottom: 1em
+
+.content h2
+  font-size: 1.75em
+  font-weight: 600
+  line-height: 1.125em
+
+.content h3
+  font-size: 1.5em
+
+.content pre
+  -webkit-overflow-scrolling: touch
+  overflow-x: auto
+  padding: 1.25em 1.5em
+  white-space: pre
+  word-wrap: normal
+  background: #3338
+  margin-bottom: .5rem
+
+.title, h1, h2, h1 a, h2 a
+  font-family: $serif
+  font-weight: 300
+  margin: 0
+  margin-bottom: .5rem
+  padding: 0
+  font-size: 2rem
+  line-height: 1.125
+
+.title strong
+  font-weight: 500
+
+.subtitle
+  font-family: $serif
+  font-size: 1.25rem
+  line-height: 1.25
+  margin-bottom: 1.5rem
+
+.subtitle, h1 small, h2 small
+  color: $sec-color
+  font-weight: 500
+
+.tag:not(body).is-primary
+  background-color: $transparent-box
+  color: $pri-color
+
+.tag:not(body)
+  align-items: center
+  background-color: $pri-color
+  border-radius: 4px
+  color: $pri-back
+  display: inline-flex
+  font-size: .75rem
+  height: 2em
+  justify-content: center
+  line-height: 1.5
+  padding-left: 0.75em
+  padding-right: 0.75em
+  white-space: nowrap
+  margin-right: .75em
+
+.input
+  color: $pri-color
+  border: 1px solid
+  background: transparent
+  &:hover
+    color: $pri-color
+    border: 1px solid
+    background: $sec-back
+  &:focus
+    color: $pri-color
+    border: 1px solid
+    background: transparent
+  &:active
+    color: $pri-color
+    border: 1px solid
+    background: $sec-back
+  //@include placeholder
+    color: $pri-color
+
+.button.is-primary
+  color: $pri-color
+  border: 1px solid
+  background: transparent
+  &:hover
+    color: $pri-color
+    border: 1px solid
+    background: $sec-back
+  &:focus
+    color: $pri-color
+    border: 1px solid
+    background: transparent
+
+.button.tag.is-primary
+  background: transparent
+
+#subscription
+  max-width: max-content
+  //border: 2px solid
+  background-color: $transparent-box
+  border-radius: 1rem
+  margin: 2rem auto 0px auto
+  padding: 1rem
+
+.pagination-previous, .pagination-next, .pagination-link, .file-name, .input, .button
+  cursor: pointer
+  justify-content: center
+  padding-bottom: calc(0.5em - 1px)
+  text-align: center
+  white-space: nowrap
+  -moz-appearance: none
+  -webkit-appearance: none
+  align-items: center
+  border: 1px solid transparent
+  border-radius: 4px
+  box-shadow: none
+  display: inline-flex
+  font-size: 1rem
+  height: 2.5em
+  justify-content: flex-start
+  line-height: 1.5
+  padding-bottom: calc(0.5em - 1px)
+  padding-left: calc(0.75em - 1px)
+  padding-right: calc(0.75em - 1px)
+  padding-top: calc(0.5em - 1px)
+  position: relative
+  vertical-align: top
+
+.button.article-image
+  float: right
+  height: 2rem
+  width: 3rem
+  background: transparent
+  border: transparent
+  font-size: 1.25rem
+
+.modal
+  align-items: center
+  display: none
+  flex-direction: column
+  justify-content: center
+  overflow: hidden
+  position: fixed
+  z-index: 40
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+
+.modal-background
+  background: #0008
+  position: fixed
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+
+.modal-close
+  height: 2rem
+  width: 2rem
+  position: fixed
+  right: 2rem
+  top: 2rem
+  float: right
+  background: $pri-back
+  border-radius: 50%
+  cursor: pointer
+  border: 2px solid $transparent-box
+  &:hover
+    border-color: $pri-color
+  &:before
+    height: 2px
+    width: 50%
+  &:after
+    height: 50%
+    width: 2px
+  &:before, &:after
+    background-color: $pri-color
+    content: ""
+    display: block
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translateX(-50%) translateY(-50%) rotate(45deg)
+    transform-origin: center center
+
+.modal-content
+  width: 80vw
+  max-height: 100vh
+  position: relative
+  text-align: center
+  img
+    max-width: 80vw
+    max-height: 80vh
+    height: auto
+    width: auto
+    border: 4px solid $sec-back
+    border-radius: 8px
+  a
+    bottom: 2em
+    background: $pri-back
+    border: 2px solid $sec-back
+    &:hover
+      border-color: $pri-color
+
+.blog-content
+  font-size: 1.2rem
+  p
+    img
+      width: 100%
+
+table, .table
+  background: transparent
+  color: $pri-color
+  margin-bottom: 1em
+  width: 100%
+  border-spacing: 0
+
+.table th, .content table thead td, .content table thead th
+  color: $pri-color
+  font-family: $serif
+
+.content table td, .content table th
+  border: 1px solid #dbdbdb
+  border-width: 0 0 1px
+  padding: 0.5em 0.75em
+  vertical-align: top
+
+strong
+  color: $pri-color
+
+a
+  color: $pri-color
+  text-decoration: none
+  &:hover
+    color: $pri-color
+    text-decoration: underline
+
+.content a, table a
+  text-decoration: 1px underline dotted
+  &:hover
+    text-decoration: 1px underline
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6
+  color: $pri-color
+  font-family: $serif
+
+.content blockquote
+  border: 0
+  border-left: .25rem ridge $pri-color
+  border-radius: .25rem
+  background: #3338
+  background-opacity: .4
+  padding: 1rem 1rem .5rem 1rem
+  margin: .5rem
+
+blockquote p
+  padding: 0
+
+.line
+  background: $sec-back
+  background-image: linear-gradient(to right, $sec-back, $pri-color, $sec-back)
+  height: 1px
+
+hr
+  background: $pri-color
+  background-image: linear-gradient(to right, $pri-back, $pri-color, $pri-back)
+  height: 1px
+  border: 0
+
+.footer
+  padding: 3rem
+  background: $sec-back
+  color: $sec-color
+
+.pagination
+  background: transparent
+
+.pagination-previous, .pagination-next, .pagination-link
+  color: $pri-color
+  font-family: $serif
+  border-color: transparent
+  background-color: $transparent-box
+  padding-top: 0
+  padding-bottom: 0
+  &:hover
+    color: $pri-color
+    text-decoration: underline
+  &:focus
+    border-color: $pri-color
+
+.pagination-next
+  margin-left: auto
+
+.field
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin-bottom: .75rem
+  input:not(.button)
+    border: 1px solid
+    border-radius: 4px
+    display: inline-flex
+    height: 1.5em
+    line-height: 1.5
+    font-size: 1rem
+    align-items: center
+    border-bottom-right-radius: 0
+    border-top-right-radius: 0
+    border-right: 0px
+  input.button
+    border-bottom-left-radius: 0
+    border-top-left-radius: 0
+
+.button.tag
+  padding-top: 0
+  padding-bottom: 0
+
+p.readtime
+  opacity: .8
+  font-family: $serif
+
+.tags
+  display: flex
+
+.tags.has-addons .tag:not(:last-child)
+  border-top-right-radius: 0
+  border-bottom-right-radius: 0
+
+.tags.has-addons .tag:not(:first-child)
+  margin-left: 0
+  border-top-left-radius: 0
+  border-bottom-left-radius: 0
+
+#feedback
+  font-family: $serif
+  a
+    text-decoration: 1px underline dotted
+    &:hover
+      text-decoration: 1px underline
+  span
+    display: none
+
+.button.is-text
+  color: $pri-color
+  text-decoration: none
+  &:hover
+    text-decoration: none
+    background: $pri-color
+    color: $pri-back
+
+// Scrollbar Width
+::-webkit-scrollbar
+  width: 6px
+
+// Scrollbar Track
+::-webkit-scrollbar-track
+  background: $pri-back
+
+// Scrollbar Handle
+::-webkit-scrollbar-thumb
+  background: black
+
+.control
+  box-sizing: border-box
+  clear: both
+  font-size: 1rem
+  position: relative
+  text-align: inherit
+  margin-bottom: .75rem
+
+.has-text-centered
+  text-align: center
+
+.tags tag
+  margin-bottom: auto
+
+.tags .tag:not(:last-child)
+  margin-right: auto
+
+.post-info .tag
+  margin-top: .25rem
+
+@media only screen and (min-width: 1408px)
+  .container
+    max-width: 1344px
+    margin: auto
+  .navbar-start, .navbar-end, .navbar-menu.is-active, .navbar-item, .navbar-link, .navbar .container
+    display: flex
+  .navbar-dropdown, .navbar-burger
+    display: none
+
+@media only screen and (min-width: 1216px) and (max-width: 1407px)
+  .container
+    max-width: 1152px
+    margin: auto
+  .navbar-start, .navbar-end, .navbar-menu.is-active, .navbar-item, .navbar-link, .navbar .container
+    display: flex
+  .navbar-dropdown, .navbar-burger
+    display: none
+
+@media only screen and (min-width: 1024px) and (max-width: 1215px)
+  .container
+    max-width: 960px
+    margin: auto
+  .navbar-start, .navbar-end, .navbar-menu.is-active, .navbar-item, .navbar-link, .navbar .container
+    display: flex
+  .navbar-dropdown, .navbar-burger
+    display: none
+  .navbar-item
+    &:hover
+      background: $pri-back
+
+@media only screen and (max-width: 1023px)
+  .container
+    width: 100%
+    margin: auto
+  .navbar-brand
+    margin-left: 0
+    width: 100%
+  .navbar-item
+    min-height: auto
+  .navbar-menu
+    display: none
+  .navbar-start, .navbar-end, .navbar-dropdown, .navbar-burger, .navbar-menu.is-active, .navbar-item, .navbar-link, .navbar .container
+    display: block
+    position: relative
+    box-shadow: none
+    padding: 0
+  .navbar-dropdown
+    border: 0
+
+@media only screen and (min-width: 1024px)
+  .is-hidden-desktop
+    display: none
+  .section
+    padding: 3rem
+
+@media only screen and (min-width: 769px)
+  .column.is-three-fifths
+    flex: none
+    width: 60%

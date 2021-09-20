@@ -1,7 +1,7 @@
-Title: Hello world!
-Description: From pouyacode.net
-Date: 2019-12-11 22:05
-Modified: 2019-12-13 5:02
+title: Hello world!
+description: From pouyacode.net
+date: 2019-12-11 22:05
+modified: 2019-12-13 5:02
 category: Personal
 image: hello-world.jpg
 icon: far fa-smile
@@ -16,7 +16,7 @@ Anyway, enough is enough, I just decided to face my fear and go for it.
 
 
 ## About the blog
-I used [Pelican](https://blog.getpelican.com/) to generate this website and [Bulma](https://bulma.io) gave it life, you can see FontAwesome icons here and there and as you guessed already, favicon is "nerd-face" from Twemoji.
+I used [Pelican](https://blog.getpelican.com/) to generate this website and you can see FontAwesome icons here and there; as you guessed already, favicon is "nerd-face" from Twemoji!
 
 My current avatar the is a slightly edited version of [lpxpcs](https://mega.nz/#F!mXgW3apI!Tdikb01SoOaTmNLiaTRhMg)'s penguin they used in their beautiful designs.
 I used [ProggyTiny](https://proggyfonts.net/download/) font to create my logo, I absolutely love their work. It's an amazing, clear, pixel-perfect font to fill your terminal emulator with text. It's clearly readable on small size.

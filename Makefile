@@ -42,6 +42,7 @@ html:
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
+	[ ! -d $(CURDIR)/output ] || rm -rf $(CURDIR)/output
 
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
@@ -69,7 +70,7 @@ else
 endif
 
 publish:
-	sass -s compressed sass/bulma.sass:output/theme/css/bulma.css
+	sass -s compressed sass/style.sass:output/theme/css/style.css
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	$(PY) $(BASEDIR)/monkey-patch.py
 	sh $(BASEDIR)/monkey-patch.sh

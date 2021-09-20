@@ -1,6 +1,6 @@
-Title: Quantum Computing
-Description: Is this an evolution?
-Date: 2019-12-19 10:42
+title: Quantum Computing
+description: Is this an evolution?
+date: 2019-12-19 10:42
 category: Technology
 tags: quantum, computing, technology
 image: quantum-computing.jpg

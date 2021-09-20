@@ -1,6 +1,6 @@
-Title: Alexa Monitor Documents
-Description: You can't write a beginner-friendly project without documents
-Date: 2021-06-27 12:56:16
+title: Alexa Monitor Documents
+description: You can't write a beginner-friendly project without documents
+date: 2021-06-27 12:56:16
 category: Programming
 tags: clojure, beginner-friendly, knuth
 icon: fas fa-spider

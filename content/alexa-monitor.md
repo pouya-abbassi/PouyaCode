@@ -1,7 +1,7 @@
-Title: Alexa Monitor
-Description: A beginner friendly Clojure app
-Date: 2021-06-17 18:55:14
-Modified: 2021-06-27 10:05:34
+title: Alexa Monitor
+description: A beginner friendly Clojure app
+date: 2021-06-17 18:55:14
+modified: 2021-06-27 10:05:34
 category: Programming
 tags: clojure, beginner-friendly
 icon: fas fa-spider
