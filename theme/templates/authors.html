@@ -11,8 +11,7 @@
       {% for author, articles in authors|sort %}
         <div class="control">
           <div class="tags has-addons">
-          <a href="{{ SITEURL }}/{{ author.url }}" class="tag is-primary">{{ author }}</a>
-          <span class="tag">({{ articles|count }})</span>
+          <a href="{{ SITEURL }}/{{ author.url }}" class="tag is-primary">{{ author }} ({{ articles|count }})</a>
           </div>
         </div>
       {% endfor %}

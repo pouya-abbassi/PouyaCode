@@ -6,8 +6,8 @@ from jsmin import jsmin
 import os
 
 AUTHOR = 'Pouya Abbassi'
-SITENAME = 'PouyaCode'
-DESCRIPTION = 'A place for my thoughts.'
+SITENAME = 'Pouya Code'
+DESCRIPTION = 'My personal place, where I think out loud.'
 SITEURL = 'http://localhost:8000'
 EMAIL = '<b>m</b>e<span>net</span>&#64;pouya<span>awesome</span>code&#46;net'
 EMAIL_ROT13 = 'znvygb:zr@cbhlnpbqr.arg' #ROT13

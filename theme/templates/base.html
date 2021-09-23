@@ -111,7 +111,7 @@
 
         <div class="navbar-end">
             {% for name, url, icon in SOCIAL %}
-	    <a class="navbar-item is-large" href="{{ url }}" id="{{ name|lower|replace(" ", "-") }}" title="{{ name }}" rel="nofollow" target="_blank">
+            <a class="navbar-item is-large" href="{{ url }}" id="{{ name|lower|replace(" ", "-") }}" title="{{ name }}" rel="nofollow" target="_blank">
               <span class="is-large icon">
                 <i class="{{ icon }} fa-lg" aria-hidden="true"></i>
               </span>
@@ -137,8 +137,8 @@
   <div class="line"></div>
   <script defer
           type="application/javascript"
-	  src="{{ SITEURL }}/theme/js/main.min.js?v=5"
-	  integrity="sha512-LaKv+X8SrEzYkEBkM0chjQesOX6crYENPP97hcKO6/FPiWwmHQWbAAGhdqiQ5vGH4N2HtYYRfmCSRNW7GfcDjQ=="></script>
+          src="{{ SITEURL }}/theme/js/main.min.js?v=5"
+          integrity="sha512-LaKv+X8SrEzYkEBkM0chjQesOX6crYENPP97hcKO6/FPiWwmHQWbAAGhdqiQ5vGH4N2HtYYRfmCSRNW7GfcDjQ=="></script>
 {% include "gosquared.html" %}
 {% include "google.html" %}
 </body>
