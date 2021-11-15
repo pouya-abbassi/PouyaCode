@@ -5,7 +5,7 @@ category: Design
 tags: design, ui/ux, appearance
 image: dark-template.jpg
 icon: far fa-moon
-
+image_info: Image by me, made with Blender.
 
 ## Embrace the darkness
 Designing a beautiful template is always a struggle, but when it comes to dark design you need to be extra careful. Many small things can totally ruin your masterpiece.
@@ -105,6 +105,3 @@ But not everybody likes a dark websites. You need to consider your content and a
 
 Keep in mind:
 > Simplicity is the ultimate sophistication. - Leonardo Da Vinci
-
----
-*Image by myself, using Blender.*

@@ -6,6 +6,7 @@ category: Programming
 tags: technology, computing, languages, ritchie, mccarthy, russell
 icon: far fa-save
 image: executable-size-of-different-compilers.jpg
+image_info: Image by me, made with Blender.
 
 
 Usually when we compare Programming Languages, we tend to compare their speed and working environment, then we may put their community and library availability into account; But rarely compare different Languages or Compilers on their execution size, unless it's a matter of Kernel Development or Embedded Systems.
@@ -300,7 +301,3 @@ Same thing for SBCL and CCL, which are not built for low level system programmin
 
 Again. Let me rephrase that:
 >It's not just the compiler. it's the philosophy, packed inside our program!
-
-
----
-*Image by myself, using Blender.*

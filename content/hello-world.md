@@ -5,6 +5,7 @@ modified: 2021-09-20 16:08
 category: Personal
 image: hello-world.jpg
 icon: far fa-smile
+image_info: Image from <a href="https://unsplash.com/photos/bJhT_8nbUA0">Unsplash</a>.
 
 
 ## The first blog post
@@ -32,7 +33,3 @@ I'm not currently active on any social media, I don't really like them much. You
 If you read this, please let me know what you think. This is a static website and I don't want to use third-party commenting system, mostly for privacy reasons. So if you're interested, please send me an email and let me know what you think about my blog.
 
 I'm a geek, currently busy writing codes. So you already know what my blogs would be about. If you find anything incorrect or misleading, please leave me an email and let me know.
-
-
----
-*Image from [Unsplash](https://unsplash.com/photos/bJhT_8nbUA0).*

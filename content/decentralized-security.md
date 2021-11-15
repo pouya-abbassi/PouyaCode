@@ -6,6 +6,7 @@ category: Security
 tags: computing, technology, encryption, pgp
 image: decentralized-security.jpg
 icon: fas fa-network-wired
+image_info: Image from <a href="https://www.pxfuel.com/en/free-photo-jrpjv">pxfuel</a>.
 
 
 At the very beginning, internet was built for decentralization. OK, maybe not! But they designed the protocol for two computer to communicate with each other; No centralized server in between! This is what happened the first time two computer were connected using what we now call "Internet Protocol".
@@ -51,7 +52,3 @@ Decentralization is a great ideology we should invest time and attention on it. 
 
 Decentralized systems are here to stay and they're unstoppable, take it from T-850:
 > Judgment Day is inevitable.
-
-
----
-*Image from [Pxfuel](https://www.pxfuel.com/en/free-photo-jrpjv).*

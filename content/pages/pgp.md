@@ -17,4 +17,4 @@ rsa4096/0xAF5A5A4AD4FD8797 2020-01-26
 ```
 
 ---
-*Image is enigma machine from [Unsplash](https://unsplash.com/photos/4hfpVsi-gSg).*
+*Background image is enigma machine from [Unsplash](https://unsplash.com/photos/4hfpVsi-gSg).*

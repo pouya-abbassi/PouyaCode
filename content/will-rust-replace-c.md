@@ -5,6 +5,7 @@ category: Programming
 tags: technology, computing, languages, ritchie, thompson
 icon: fas fa-laptop-code
 image: will-rust-replace-c.jpg
+image_info: Image by me, made with Blender.
 
 
 We recently had a long discussion on [Dev Heroes Club](https://devheroes.club/t/rust-c/5152/) about whether Rust will replace C in kernel development, considering its speed and efficiency and how fast it's growing.
@@ -91,7 +92,3 @@ But in Kernel Space it's a different story. Every byte matters, every CPU cycle,
 I don't know any other programming language, capable of producing a simpler assembly than C. For example in Rust, even if we know a better way of optimizing our code, there's no way (that I know of) we can do that. At least I couldn't figure out Rust's assembly output, it's just gigantic!
 
 To give you a better idea of why we shouldn't trust compiler to optimize our code, please check out one of the most useful articles I've ever read: [The compiler will optimize that way](https://blog.royalsloth.eu/posts/the-compiler-will-optimize-that-away/)
-
-
----
-*Image by myself, using Blender.*

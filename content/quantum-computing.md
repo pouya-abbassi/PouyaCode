@@ -5,6 +5,7 @@ category: Technology
 tags: quantum, computing, technology
 image: quantum-computing.jpg
 icon: fas fa-atom
+image_info: Image from <a href="https://unsplash.com/photos/UgNjyPkphtU">Unsplash</a>.
 
 
 ## A short history of quantum computers
@@ -195,7 +196,3 @@ I think as "the most dominant species on the planet" we should all practice the 
 Learn how to explore new systems, new rules. Experience new ways of something and analyze outcomes. Then you'll be ready for anything; Be it a quantum computer, alien invasion or zombie apocalypse.
 
 That's how scientists lived their life since the beginning. Look what they brought us: Everything.
-
-
----
-*Image from [Unsplash](https://unsplash.com/photos/UgNjyPkphtU).*

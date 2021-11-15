@@ -23,4 +23,4 @@ May the Source be with us all.
 
 
 ---
-*Image edited from [wikipedia](https://en.wikipedia.org/wiki/File:Embl%C3%A8me_de_l%27Ordre_Jedi.svg).*
+*Background image is edited from [wikipedia](https://en.wikipedia.org/wiki/File:Embl%C3%A8me_de_l%27Ordre_Jedi.svg).*

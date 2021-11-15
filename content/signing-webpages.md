@@ -6,6 +6,7 @@ category: Security
 tags: computing, technology, encryption, pgp, sameer
 image: signing-webpages.jpg
 icon: fas fa-shield-alt
+image_info: Image from <a href="https://www.freepik.com/free-vector/smart-contract-web-banner_5902294.htm">Freepik</a>.
 
 
 A while ago, I shared [my PGP key](/pages/pgp.html) with you, "for more secure connections in future"; And I'm glad to announce that all `HTML` pages of this website are now signed by my PGP key.
@@ -126,8 +127,4 @@ If you know any way I could improve this code, please contact me via email, I wo
 * As I mentioned earlier, whatever comes before and after, is not part of the content or the signature. So attacker can still prepend and append things to this file; But that would be visually obvious and recognizable. This could be fixed with a `--detach-sign`, but I wanted to keep the signature inside the `HTML` file.
 * Since the PGP signature includes multiple hyphens inside our `HTML` comments, it's not W3C standard, but not an issue either. It's a small price to pay.
 
-"But it's already over SSL/TLS! Why do you need to sign it too?" you might say, but sometimes I like to wear my til foil hat and don't put my trust in host providers or CDNs. You know, for Geek's sake!
-
-
----
-*Image from [Freepik](https://www.freepik.com/free-vector/smart-contract-web-banner_5902294.htm).*
+"But it's already over SSL/TLS! Why do you need to sign it too?" you might say, but sometimes I like to wear my tin foil hat and don't put my trust in host providers or CDNs. You know, for Geek's sake!

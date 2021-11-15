@@ -5,7 +5,7 @@ category: Programming
 tags: clojure, beginner-friendly, knuth
 icon: fas fa-spider
 image: alexa-monitor-documents.jpg
-
+image_info: Image by me, made with Blender. You can 3D model is available <a href="(https://mega.nz/folder/dcs2FR7K#3_N28U-vC7dLa9vF90kaxA" rel="nofollow" target="_blank">here</a>.
 
 As usual, every project starts with a try-and-fail phase; In other words: little-to-no comment and rapid change in the code-base. But now, I have a solid ground to work on, so spent some time writing comments and found an amazing tool to build a [pretty nice api-doc](https://alexa-monitor.pouyacode.net).
 
@@ -37,7 +37,3 @@ Today I also added this project to [BraveClojure's Open Source projects list](ht
 The documents generated for alexa-monitor are available [here](https://alexa-monitor.pouyacode.net).
 
 Previous article in this series: [Alexa Monitor]({filename}/alexa-monitor.md).
-
----
-
-*Image by myself, using Blender; You can also [download the 3D model](https://mega.nz/folder/dcs2FR7K#3_N28U-vC7dLa9vF90kaxA).*

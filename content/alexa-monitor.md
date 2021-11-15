@@ -6,6 +6,7 @@ category: Programming
 tags: clojure, beginner-friendly
 icon: fas fa-spider
 image: alexa-monitor.jpg
+image_info: Image by me, made with Blender. You can 3D model is available <a href="https://mega.nz/folder/dcs2FR7K#3_N28U-vC7dLa9vF90kaxA" rel="nofollow" target="_blank">here</a>.
 
 
 I was experimenting with some Clojure libraries and decided to write a simple web crawler, one thing led to another and now, I think it would be a good opportunity to make it public and help new Clojure programmers take their first steps by contributing to it.
@@ -48,7 +49,3 @@ Documents available [here](https://alexa-monitor.pouyacode.net).
 Discussions take place at [Gitter](https://gitter.im/pouyacode/alexa-monitor).
 
 Next article in this series: [Alexa Monitor Documents]({filename}/alexa-monitor-documents.md).
-
----
-
-*Image by myself, using Blender; You can also [download the 3D model](https://mega.nz/folder/dcs2FR7K#3_N28U-vC7dLa9vF90kaxA).*
