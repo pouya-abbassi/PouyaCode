@@ -1,21 +1,12 @@
-@charset 'utf-8'
 
-@font-face
-  font-family: 'Roboto'
-  font-style: normal
-  font-weight: 400
-  src: local('Roboto')
-  src: local('Roboto-Medium')
-  src: url(/theme/fonts/Roboto-Medium.woff2) format('woff2')
-  font-display: swap
 
 @font-face
   font-family: 'Quicksand'
   font-style: normal
-  font-weight: 400
+  font-weight: 500
   src: local('Quicksand')
   src: local('Quicksand-Medium')
-  src: url(/theme/fonts/Quicksand-Medium.woff2) format('woff2')
+  src: url(/theme/fonts/Quicksand.woff2) format('woff2')
   font-display: swap
 
 @font-face
@@ -24,12 +15,11 @@
   font-weight: 400
   src: local('Roboto Mono')
   src: local('RobotoMono-Medium')
-  src: url(/theme/fonts/RobotoMono-Medium.woff2) format('woff2')
+  src: url(/theme/fonts/RobotoMono.woff2) format('woff2')
   font-display: swap
 
-$sans-serif: 'Roboto', Arial, Helvetica, Ubuntu, sans-serif
 $serif: 'Quicksand', Ubuntu, Times, serif
-$mono: 'Roboto Mono', Inconsolata, ubuntu mono, hack
+$mono: 'Roboto Mono', Inconsolata, ubuntu mono, hack, monospace
 
 $back: #222
 $color: #DED
@@ -44,8 +34,9 @@ html, body
   color: $color
   line-height: 23px
   margin: 0
-  font-family: $sans-serif
+  font-family: $serif
   scroll-behavior: smooth
+  font-weight: 500
 
 p
   margin: 0
@@ -212,10 +203,6 @@ a.navbar-link
 a.navbar-item
   text-decoration: none
 
-a.article-title
-  &:hover
-    text-decoration: .1rem underline
-
 .navbar-burger
   cursor: pointer
   display: none
@@ -273,8 +260,7 @@ article.content
     box-shadow: inset 0 0 3rem 2rem $back
 
 h1, h2, h3,h4, h5, h6
-  font-family: $serif
-  font-weight: 600
+  font-weight: 500
   margin-bottom: .5em
   :not(:first-child)
     margin-top: 1em
@@ -294,8 +280,7 @@ h1, h2, h3,h4, h5, h6
   background: #3338
   margin-bottom: .5rem
 
-.title
-  font-weight: 400
+.title, .subtitle
   margin: 0
   margin-bottom: .5rem
   padding: 0
@@ -304,7 +289,6 @@ h1, h2, h3,h4, h5, h6
 
 .subtitle
   font-size: 1.25rem
-  line-height: initial
 
 .tag:not(body)
   background-color: $transparent-box
