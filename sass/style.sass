@@ -1,4 +1,5 @@
 @charset 'utf-8'
+@use "sass:color"
 
 @font-face
   font-family: 'Quicksand'
@@ -21,15 +22,13 @@
 $serif: 'Quicksand', Ubuntu, Times, serif
 $mono: 'Roboto Mono', Inconsolata, ubuntu mono, hack, monospace
 
-$back: #222
-$color: #DED
-$sec-back: #333
-
-$transparent-box: #DED3
+$color: hsl(42, 100%, 95.3%)
+$back: color.change($color, $saturation: 5%, $lightness: 13%)
+$sec-back: lighten($back, 6%)
 
 html, body
   scrollbar-width: thin
-  scrollbar-color: #555 $back
+  scrollbar-color: $color $back
   background: $back
   color: $color
   line-height: 23px
@@ -291,7 +290,7 @@ h1, h2, h3,h4, h5, h6
   font-size: 1.25rem
 
 .tag:not(body)
-  background-color: $transparent-box
+  background-color: $sec-back
   border-radius: 4px
   display: inline-flex
   font-size: .75rem
@@ -319,7 +318,7 @@ h1, h2, h3,h4, h5, h6
 
 #subscription
   max-width: max-content
-  background-color: $transparent-box
+  background-color: $sec-back
   border-radius: 1rem
   margin: 2rem auto 0px auto
   padding: 1rem
@@ -385,7 +384,7 @@ h1, h2, h3,h4, h5, h6
   background: $back
   border-radius: 50%
   cursor: pointer
-  border: 2px solid $transparent-box
+  border: 2px solid $sec-back
   &:hover
     border-color: $color
   &:before
@@ -483,7 +482,7 @@ hr
 
 .pagination-previous, .pagination-next, .pagination-link
   border-color: transparent
-  background-color: $transparent-box
+  background-color: $sec-back
   padding: 0 1em
   border: 1px solid transparent
   &:hover
