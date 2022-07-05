@@ -4,7 +4,7 @@
   {% block head %}
   <meta charset="utf-8" />
   <title>{% if article is defined and article.title is defined %}{{ article.title|title }}{% if article.description is defined %}, {{ article.description }}{% endif %}{% elif page is defined and page.title is defined %}{{ page.title|title }}{% if page.description is defined %}, {{ page.description }}{% endif %}{% else %}{{ SITENAME }}{% endif %}</title>
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css?v=1">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css?v=2">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygment.min.css?v=0">
   <noscript>
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/font-awesome.min.css?v=1">
