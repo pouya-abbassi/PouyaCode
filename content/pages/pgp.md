@@ -12,7 +12,7 @@ Here's [my PGP key](/theme/files/pouya.gpg.asc). Keep it close somewhere for mor
 And the fingerprint:
 
 ```text
-rsa4096/0xAF5A5A4AD4FD8797 2020-01-26
+rsa4096/0xAF5A5A4AD4FD8797 2024-01-29
 8CC7 EB15 3563 4205 E9C2  AAD9 AF5A 5A4A D4FD 8797
 ```
 
